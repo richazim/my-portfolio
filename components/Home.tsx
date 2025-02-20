@@ -2,6 +2,7 @@
 import React from 'react'
 import Header from './Header'
 import Profile from './Profile'
+import NavigationMenuBar from "@/components/NavigationMenuBar";
 
 const Home = () => {
   return (
@@ -22,6 +23,10 @@ const Home = () => {
             <p>You don&#39;t have to worry again about hiring</p>
             <p>both frontend and backend developper.</p>
           </div>
+        </div>
+
+        <div className="absolute w-full bottom-[30px] flex justify-center items-center">
+            <NavigationMenuBar/>
         </div>
     </section>
   )
