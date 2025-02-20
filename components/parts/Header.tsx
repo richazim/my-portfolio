@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import ContactMenuBar from './ContactMenuBar'
+import ContactMenuBar from '../ContactMenuBar'
 
 const Header = () => {
   return (

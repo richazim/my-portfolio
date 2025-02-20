@@ -1,22 +1,22 @@
-"use client"
-import Home from "@/components/Home";
-import Loader from "@/components/Loader";
-import {useEffect, useState} from "react";
+import Home from "@/components/parts/Home";
+import Works from "@/components/parts/Works";
 
-export default function Portfolio() {
-  const [showPage, setShowPage] = useState(false);
+const getUsers = async () => {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    if (!res.ok) throw new Error(res.statusText)
+    await new Promise(resolve => setTimeout(resolve, 3000));
+    const users = await res.json()
+    return users
+}
 
-  useEffect(() => {
-    setTimeout(function(){
-      setShowPage(true)
-    }, 2000);
-  }, []);
+export default async function Portfolio() {
+    const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
 
   return (
     <main>
-      {!showPage ? <Loader/> : (
         <Home/>
-      )} 
+
+        <Works/>
     </main>
   );
 }
