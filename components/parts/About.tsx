@@ -30,7 +30,7 @@ const backendTools = [
 const About = () => {
   return (
     <div>
-        <p>I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
+        <p className="text-[60px] font-bold font-monaSans">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
 
         <div>
             <section className="paragraphs">
