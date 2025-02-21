@@ -10,6 +10,7 @@ type WorkDataType = {
   githubLink: string,
   demoLink: string,
   demoImagePath: string,
+  switchCase?: boolean
 }
 
 const worksData: WorkDataType[] = [
@@ -20,7 +21,7 @@ const worksData: WorkDataType[] = [
     technologies: ["React Native", "Appwrite"],
     githubLink: 'https://github.com/richazim/magags',
     demoLink: '',
-    demoImagePath: '/assets/images/regags.png'
+    demoImagePath: '/assets/images/thumbnail.png'
   },
   {
     id: 2,
@@ -29,7 +30,8 @@ const worksData: WorkDataType[] = [
     technologies: ["React Native", "Appwrite"],
     githubLink: 'https://github.com/richazim/magags',
     demoLink: '',
-    demoImagePath: '/assets/images/regags.png'
+    demoImagePath: '/assets/images/thumbnail.png',
+    switchCase: true
   }
 ]
 
@@ -47,6 +49,7 @@ const Works = () => {
                 githubLink={item.githubLink}
                 demoLink={item.demoLink}
                 demoImagePath={item.demoImagePath}
+                switchCase={item.switchCase}
             />
         ))
       }

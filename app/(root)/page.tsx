@@ -1,5 +1,6 @@
 import Home from "@/components/parts/Home";
 import Works from "@/components/parts/Works";
+import Testimonials from "@/components/parts/Testimonials";
 
 const getUsers = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -16,8 +17,10 @@ export default async function Portfolio() {
     <main className="">
         <Home/>
 
-        <div className="px-[100px]">
+        <div className="px-[100px] flex flex-col justify-between gap-[50px]">
             <Works/>
+
+            <Testimonials/>
         </div>
     </main>
   );
