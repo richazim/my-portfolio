@@ -7,7 +7,7 @@ const CommentCard = ({
     profession,
     location,
     comment
-                     }) => {
+                     } : {name: string, profile: string, profession: string, location: string, comment: string}) => {
     return (
         <div className="border border-[#333] w-full p-[20px]">
             <div className="lines">
