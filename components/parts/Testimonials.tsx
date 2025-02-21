@@ -66,7 +66,7 @@ const Testimonials = () => {
             </div>
 
             <div className="hireMePart flex justify-center items-center">
-                <Link href="" className="rounded-xl overflow-hidden w-[165px] h-[32px] relative">
+                <Link href="https://www.freelancer.com/u/richazim" className="rounded-xl overflow-hidden w-[165px] h-[32px] relative">
                     <Image src="/assets/icons/hiring-logo.svg" alt='' width={165} height={32} className=''/>
                 </Link>
             </div>
