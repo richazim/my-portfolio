@@ -2,13 +2,23 @@
 import React from 'react'
 import WorkCard from "@/components/WorkCard";
 
-const worksData = [
+type WorkDataType = {
+  id: number,
+  title: string,
+  description: string,
+  technologies: string[],
+  githubLink: string,
+  demoLink: string,
+  demoImagePath: string,
+}
+
+const worksData: WorkDataType[] = [
   {
     id: 1,
     title: 'regags',
     description: 'Community based fun social media app created by richazim to help programmers have fun during day',
     technologies: ["React Native", "Appwrite"],
-    githubLink: 'https://github.com/richaziam/regags',
+    githubLink: 'https://github.com/richazim/magags',
     demoLink: '',
     demoImagePath: '/assets/images/regags.png'
   },
@@ -17,7 +27,7 @@ const worksData = [
     title: 'regags',
     description: 'Community based fun social media app created by richazim to help programmers have fun during day',
     technologies: ["React Native", "Appwrite"],
-    githubLink: 'https://github.com/richaziam/regags',
+    githubLink: 'https://github.com/richazim/magags',
     demoLink: '',
     demoImagePath: '/assets/images/regags.png'
   }
@@ -25,7 +35,7 @@ const worksData = [
 
 const Works = () => {
   return (
-    <div className="flex flex-col gap-[20px]">
+    <div className="flex flex-col gap-[20px] pt-[90px]">
       {
         worksData.map((item) => (
             <WorkCard

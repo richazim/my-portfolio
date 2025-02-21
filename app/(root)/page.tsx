@@ -10,13 +10,15 @@ const getUsers = async () => {
 }
 
 export default async function Portfolio() {
-    const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
+    // const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
 
   return (
-    <main>
+    <main className="">
         <Home/>
 
-        <Works/>
+        <div className="px-[100px]">
+            <Works/>
+        </div>
     </main>
   );
 }

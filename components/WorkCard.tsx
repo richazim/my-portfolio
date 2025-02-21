@@ -1,4 +1,16 @@
 import React from 'react';
+import Image from "next/image";
+import Link from "next/link";
+
+type Props = {
+    id: number,
+    title: string,
+    description: string,
+    technologies: string[],
+    githubLink: string,
+    demoLink: string,
+    demoImagePath: string
+}
 
 const WorkCard = ({
     id,
@@ -8,28 +20,38 @@ const WorkCard = ({
     githubLink,
     demoLink,
     demoImagePath
-                  }) => {
+                  } : Props) => {
     return (
-        <div className="grid grid-cols-2">
-            <div className="border">
-                <div className="links">
-                    <a href={githubLink} target="_blank">G</a>
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-[#1b3266]">
+            <div className="px-[50px] relative h-[400px]">
+                <div className="links absolute top-[20px] w-[170px] flex flex-row justify-between">
+                    <Link href={githubLink} target="_blank" className="h-[70px] w-[70px] bg-white rounded-full flex justify-center items-center">
+                        <Image src="/assets/icons/github.svg" alt="" height={30} width={30}/>
+                    </Link>
 
-                    <a href={demoLink} target="_blank">T</a>
+                    <Link href={demoLink} target="_blank" className="h-[70px] w-[70px] bg-white rounded-full flex justify-center items-center">
+                        <Image src="/assets/icons/link.svg" alt="" height={30} width={30}/>
+                    </Link>
                 </div>
 
-                <h4>{title}</h4>
+                <h4 className="absolute top-[150px] text-[70px] font-bold capitalize">{title}</h4>
 
-                <p>{description}</p>
+                <p className="absolute top-[250px] text-[20px] font-bold capitalize text-[#333]">{description}</p>
 
-                <p>
+                <p className="absolute top-[320px] flex flex-row justify-between gap-[20px] font-bold text-[25px] uppercase">
                     {technologies && technologies.map((technology, index) => (
                         <span key={index}>{technology}</span>
                     ))}
                 </p>
             </div>
             
-            <div className="border"></div>
+            <div className="relative h-[400px]">
+                <div className="absolute overflow-hidden h-full w-full">
+                    <div className="absolute h-[500px] xl:w-[500px] lg:w-[400px] md:w-[300px] w-[250px] right-[-50px] top-[50px] overflow-hidden rounded-xl shadow-lg">
+                        <Image src="/assets/images/thumbnail.png" alt="" layout="fill" className=""/>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

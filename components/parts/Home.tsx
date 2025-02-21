@@ -6,7 +6,7 @@ import NavigationMenuBar from "@/components/NavigationMenuBar";
 
 const Home = () => {
   return (
-    <section className='relative h-[100vh] bg-[url(/assets/images/hero-img.png)]'>
+    <section className='relative h-[100vh] overflow-auto bg-[url(/assets/images/hero-img.png)]'>
         <Header/>
 
         <div className="h-[500px] w-[900px] inline-block top-[50px] left-[50%] translate-x-[-50%] absolute"> 
