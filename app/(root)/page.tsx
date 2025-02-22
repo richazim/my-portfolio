@@ -23,15 +23,17 @@ export default async function Portfolio() {
     <main className="relative">
         <Home/>
 
-        <div className="px-[100px] flex flex-col justify-between gap-[78px]">
+        <div className="px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
             <Works/>
 
             <Testimonials/>
 
             <About/>
+        </div>
 
             <SongsRecommendation/>
 
+        <div className="px-[100px] flex flex-col justify-between gap-[78px] mt-[78px]">
             <Blogs/>
 
             <Contact/>
