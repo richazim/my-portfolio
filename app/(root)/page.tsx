@@ -6,6 +6,7 @@ import SongsRecommendation from "@/components/parts/SongsRecommendation";
 import Blogs from "@/components/parts/Blogs";
 import Contact from "@/components/parts/Contact";
 import Footer from "@/components/parts/Footer";
+import React from "react";
 
 const getUsers = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -19,7 +20,7 @@ export default async function Portfolio() {
     // const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
 
   return (
-    <main className="">
+    <main className="relative">
         <Home/>
 
         <div className="px-[100px] flex flex-col justify-between gap-[50px]">
@@ -34,7 +35,11 @@ export default async function Portfolio() {
             <Blogs/>
 
             <Contact/>
+        </div>
 
+        <div className="w-screen h-[2px] bg-[#333] my-[50px]"></div>
+
+        <div className="px-[100px]">
             <Footer/>
         </div>
     </main>
