@@ -5,14 +5,14 @@ import ContactMenuBar from "@/components/ContactMenuBar";
 
 const Contact = () => {
   return (
-    <div>
-      <div>
-          <h3 className="text-[100px] font-bold font-monaSans text-center">LET'S TALK</h3>
-          {/*<Image src="/assets/icons/3d_hands_heart.jpg" alt="" width={400} height={400}/>*/}
+    <div className="font-bold font-monaSans">
+      <div className="relative flex justify-center items-center">
+          <h3 className="text-[120px] text-center">LET'S TALK</h3>
+          <Image src="/assets/3d/hands_making_heart.png" alt="" width={200} height={200} className="absolute top-[70px]"/>
       </div>
 
-        <div>
-            <div>
+        <div className="flex flex-row justify-between">
+            <div className="w-[300px] break-all flex  flex-col justify-between gap-[20px]">
                 <p>Got a question, proposal project or want to work together on something?</p>
                 <p><span>Send me an email</span> or <span>Book a call</span></p>
             </div>
