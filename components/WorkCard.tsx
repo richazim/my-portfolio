@@ -21,6 +21,7 @@ export const FirstCase = ({
                        demoLink,
                        switchCase,
                    } : {title: string, description: string, technologies: string[], githubLink: string, demoLink: string, switchCase?: boolean}) =>
+
     <div className="px-[50px] relative h-[400px]">
         <div className={`links absolute top-[20px] ${switchCase && 'right-[30px]'} w-[170px] flex flex-row justify-between`}>
             <Link href={githubLink} target="_blank" className="h-[70px] w-[70px] bg-white rounded-full flex justify-center items-center">
@@ -68,7 +69,7 @@ const WorkCard = ({
     switchCase
                   } : Props) => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-[#1b3266]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-[#000]">
             {!switchCase ? (
                 // FirstCase({
                 //     title,
