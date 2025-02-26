@@ -9,10 +9,11 @@ const SongsRecommendation = async () => {
     return (
         <div className="flex flex-col justify-between w-[100vw] overflow-hidden">
             <section className="flex flex-row justify-between gap-[20px] items-center h-[300px]">
-                {SONGS_RECOMMENDATIONS.map((song, index) => (
-                    <div key={index} className="w-[250px] flex items-center justify-center border-[1px]">
-                        <Link href={song.url} className="h-[200px] w-[200px]">
-                            <Image src="/assets/images/profile.png" alt="" width={200} height={200}/>
+                {/* @ts-expect-error: L'API Youtube n'a pas défini de type pour les reponses api. */}
+                {SONGS_RECOMMENDATIONS.map((song, index: number) => (
+                    <div key={index} className="flex items-center justify-center">
+                        <Link href={`https://youtube.com/watch?v=${song.id}`} target="_blank" className="h-[200px] w-[350px] flex justify-center items-center overflow-hidden">
+                            <Image src={song.thumbnail} alt="" width={480} height={360} className=""/>
                         </Link>
                     </div>
                 ))}
@@ -20,7 +21,7 @@ const SongsRecommendation = async () => {
 
             <div className='mt-[50px] flex justify-center items-center'>
                 <p className="text-center font-bold w-[400px]">
-                    A FEW SONG I CAN RECOMMEND IF YOU'RE LOOKING FOR SOME GOOD ONES
+                    A FEW SONG I CAN RECOMMEND IF YOU&apos;RE LOOKING FOR SOME GOOD ONES
                 </p>
             </div>
         </div>
