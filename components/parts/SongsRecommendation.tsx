@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import {getSongsRecommendation} from "@/app/actions/songRecommendation";
+import {getSongsRecommendation} from "@/actions/songRecommendation";
 
 const SongsRecommendation = async () => {
     const SONGS_RECOMMENDATIONS = await getSongsRecommendation();

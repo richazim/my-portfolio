@@ -1,6 +1,6 @@
 "use server";
 
-import {youtubeSongsRecommendtationsIds} from "@/app/constants";
+import {youtubeSongsRecommendtationsIds} from "../constants";
 
 export const getSongsRecommendation = async () => {
     const API_KEY = process.env.YOUTUBE_API_KEY;
