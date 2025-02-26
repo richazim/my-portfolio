@@ -52,12 +52,12 @@ const Testimonials = () => {
     return (
         <div className="flex flex-col justify-between gap-[20px]">
             <div className="titles text-center font-bold font-monaSans">
-                <h3 className="text-[120px] ">TESTIMONIALS</h3>
+                <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TESTIMONIALS</h3>
                 <p>REAL COMMENTS FROM CLIENTS AND COLLABORATORS WHO</p>
                 <p>HAVE EXPERIENCED MY WORK FIRSTHAND</p>
             </div>
 
-            <div className="cards grid grid-cols-3 gap-[20px]">
+            <div className="cards grid lg:grid-cols-3 md:grid-cols-2  gap-[20px]">
                 {
                     clientComments.map((comment, index) => (
                         <CommentCard key={index} name={comment.name} profile={comment.profile} profession={comment.profession} location={comment.location} comment={comment.comment}/>

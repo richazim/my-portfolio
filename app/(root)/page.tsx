@@ -20,10 +20,10 @@ export default async function Portfolio() {
     // const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
 
   return (
-    <main className="relative">
+    <main className="relative overflow-x-hidden">
         <Home/>
 
-        <div className="px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
+        <div className="px-[20px] md:px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
             <Works/>
 
             <Testimonials/>
@@ -33,7 +33,7 @@ export default async function Portfolio() {
 
             <SongsRecommendation/>
 
-        <div className="px-[100px] flex flex-col justify-between gap-[78px] mt-[78px]">
+        <div className="px-[20px] xl:px-[100px] flex flex-col justify-between gap-[78px] mt-[78px]">
             <Blogs/>
 
             <Contact/>

@@ -8,14 +8,14 @@ const BlogCard = ({
     date
                   }: {title: string, thumbnail: string, link: string, date: string}) => {
     return (
-        <div className="h-[480px] w-[340px] rounded-xl border px-[30px] relative">
-            <div className="rounded-xl overflow-hidden mt-[30px] mb-[10px]">
-                <Image src={thumbnail} alt="" height={120} width={280} className="border object-cover"/>
+        <div className="rounded-xl border px-[10%] mx-auto">
+            <div className="rounded-xl overflow-hidden mt-[10%] mb-[10px] border">
+                <Image src={thumbnail} alt="" height={100} width={180} className="border object-cover h-full w-full"/>
             </div>
 
             <h3 className="text-[20px] font-bold uppercase break-all">{title}</h3>
 
-            <div className="flex flex-row justify-between items-center absolute bottom-[30px] w-[280px]">
+            <div className="flex flex-row justify-between items-center">
                 <span className="font-bold">{date}</span>
 
                 <span className="w-[50px] h-[50px] bg-[#000] rounded-full flex justify-center items-center">

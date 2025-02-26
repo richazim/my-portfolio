@@ -26,7 +26,7 @@ export const WorkCardLeftPart = ({
 
         <p className={`absolute top-[250px] ${switchCase && 'right-[30px] text-right'} text-[20px] font-bold capitalize text-[#330c2f]`}>{description}</p>
 
-        <p className={`absolute top-[320px] ${switchCase && 'right-[30px]'} flex flex-row justify-between gap-[20px] font-bold text-[25px] uppercase`}>
+        <p className={`absolute top-[350px] ${switchCase && 'right-[30px]'} flex flex-row justify-between gap-[20px] font-bold text-[25px] uppercase`}>
             {technologies && technologies.map((technology, index) => (
                 <span key={index}>{technology}</span>
             ))}

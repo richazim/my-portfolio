@@ -25,7 +25,7 @@ const threeBestBlogs = [
 
 const Blogs = () => {
     return (
-        <div>
+        <div className="">
             <div>
                 <h3 className="text-[100px] font-bold font-monaSans text-center">BLOGS</h3>
 
@@ -36,10 +36,10 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className='flex flex-row justify-between flex-wrap mt-[50px]'>
+            <div className='mt-[35px] grid md:grid-cols-3 sm:grid-cols-2 gap-4' >
                 {
                     threeBestBlogs.map((blog, index) => (
-                        <div key={index}>
+                        <div key={index} className="">
                             <BlogCard title={blog.title} thumbnail={blog.thumbnail} link={blog.link} date={blog.date} />
                         </div>
                     ))

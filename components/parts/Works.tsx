@@ -37,7 +37,7 @@ const worksData: WorkDataType[] = [
 
 const Works = () => {
   return (
-    <div className="flex flex-col gap-[20px] pt-[90px]">
+    <div id="works" className="flex flex-col gap-[50px] pt-[90px]">
       {
         worksData.map((item) => (
             <WorkCard
