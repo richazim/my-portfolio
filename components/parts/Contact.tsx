@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div id="contact" className="font-bold font-monaSans">
       <div className="relative flex justify-center items-center">
-          <h3 className="text-[120px] text-center">LET'S TALK</h3>
+          <h3 className="text-[120px] text-center">LET&#39;S TALK</h3>
           <Image src="/assets/3d/hands_making_heart.png" alt="" width={200} height={200} className="absolute top-[70px]"/>
       </div>
 

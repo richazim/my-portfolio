@@ -17,7 +17,8 @@ const getUsers = async () => {
 }
 
 export default async function Portfolio() {
-    // const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
+    const usersFetchedDataToForceTheLoadingUIToShowUp = await getUsers();
+    console.log(usersFetchedDataToForceTheLoadingUIToShowUp)
 
   return (
     <main className="relative overflow-x-hidden">

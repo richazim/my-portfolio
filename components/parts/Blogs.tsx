@@ -1,6 +1,5 @@
 import React from 'react';
 import BlogCard from "@/components/BlogCard";
-import Link from "next/link";
 
 const threeBestBlogs = [
     {

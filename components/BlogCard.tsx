@@ -7,6 +7,9 @@ const BlogCard = ({
     link,
     date
                   }: {title: string, thumbnail: string, link: string, date: string}) => {
+
+    console.log(link);
+
     return (
         <div className="rounded-xl border px-[10%] mx-auto">
             <div className="rounded-xl overflow-hidden mt-[10%] mb-[10px] border">
