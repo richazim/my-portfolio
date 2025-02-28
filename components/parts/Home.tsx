@@ -1,13 +1,16 @@
 "use client"
-import React from 'react'
+import React, {useRef} from 'react'
 import Header from './Header'
 import Profile from '../Profile'
 import NavigationMenuBar from "@/components/NavigationMenuBar";
+import StickyCursor from "@/components/StickyCursor";
 
 const Home = () => {
+    const stickyElement = useRef<HTMLAnchorElement>(null);
+
   return (
     <section id="home" className='relative h-[100vh] overflow-auto bg-[url(/assets/images/hero-img.png)]'>
-        <Header/>
+        <Header ref={stickyElement}/>
 
         <div className="">
             <Profile/>
@@ -28,6 +31,8 @@ const Home = () => {
         <div className="absolute w-full bottom-[30px] flex justify-center items-center">
             <NavigationMenuBar/>
         </div>
+
+        <StickyCursor stickyElement={stickyElement}/>
     </section>
   )
 }
