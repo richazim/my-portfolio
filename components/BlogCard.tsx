@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogCard = ({
     title,
@@ -8,10 +9,8 @@ const BlogCard = ({
     date
                   }: {title: string, thumbnail: string, link: string, date: string}) => {
 
-    console.log(link);
-
     return (
-        <div className="rounded-xl border px-[10%] mx-auto">
+        <Link href={link} className="rounded-xl border px-[10%] mx-auto">
             <div className="rounded-xl overflow-hidden mt-[10%] mb-[10px] border">
                 <Image src={thumbnail} alt="" height={100} width={180} className="border object-cover h-full w-full"/>
             </div>
@@ -25,7 +24,7 @@ const BlogCard = ({
                     <Image src="/assets/icons/arrow_right.svg" alt="" width={24} height={24}/>
                 </span>
             </div>
-        </div>
+        </Link>
     );
 };
 

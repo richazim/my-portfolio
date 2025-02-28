@@ -4,7 +4,6 @@ import WorkCardRightPart from "@/components/WorkCardRightPart";
 
 
 const WorkCard = ({
-    id,
     title,
     description,
     technologies,
@@ -14,7 +13,6 @@ const WorkCard = ({
     switchCase
                   } : WorkCardProps) => {
 
-    console.log(id);
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-[#070a1f]">
             {!switchCase ? (

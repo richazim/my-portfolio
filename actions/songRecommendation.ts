@@ -12,7 +12,7 @@ export const getSongsRecommendation = async () => {
     if (!res.ok) throw new Error("Erreur lors de la récupération des vidéos YouTube");
 
     const data = await res.json();
-    console.log(data)
+
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-expect-error
     return data.items.map((video) => ({

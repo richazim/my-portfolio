@@ -34,7 +34,6 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             mouse.x.set(clientX - cursorSize / 2);
             mouse.y.set(clientY - cursorSize / 2);
         }
-        console.log(isHovered)
     }
 
     const manageMouseOver = () => {
