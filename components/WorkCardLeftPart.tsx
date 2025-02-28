@@ -14,7 +14,7 @@ export const WorkCardLeftPart = ({
     <div className="px-[50px] relative h-[400px]">
         <div className={`links absolute top-[20px] ${switchCase && 'right-[30px]'} w-[170px] flex flex-row justify-between`}>
             <Link href={githubLink} target="_blank" className="h-[70px] w-[70px] bg-white rounded-full flex justify-center items-center">
-                <Image src="/assets/icons/github.svg" alt="" height={30} width={30}/>
+                <Image src="/assets/icons/github.svg" alt="" height={41} width={40}/>
             </Link>
 
             <Link href={demoLink} target="_blank" className="h-[70px] w-[70px] bg-white rounded-full flex justify-center items-center">

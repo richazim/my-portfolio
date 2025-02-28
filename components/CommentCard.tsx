@@ -11,7 +11,7 @@ const CommentCard = ({
     return (
         <div className="border border-[#333] w-full p-[20px]">
             <div className="lines">
-                <Image src="/assets/icons/comment-card-design.svg" alt="" height={50} width={100} />
+                <Image src="/assets/icons/comment-card-design.svg" alt="" height={24} width={166} />
             </div>
 
             <p className='mt-[10px]'>{comment}</p>

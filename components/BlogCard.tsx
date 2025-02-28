@@ -10,7 +10,7 @@ const BlogCard = ({
                   }: {title: string, thumbnail: string, link: string, date: string}) => {
 
     return (
-        <Link href={link} className="rounded-xl border px-[10%] mx-auto">
+        <Link href={link} className="rounded-xl block border px-[10%] mx-auto">
             <div className="rounded-xl overflow-hidden mt-[10%] mb-[10px] border">
                 <Image src={thumbnail} alt="" height={100} width={180} className="border object-cover h-full w-full"/>
             </div>
@@ -21,7 +21,7 @@ const BlogCard = ({
                 <span className="font-bold">{date}</span>
 
                 <span className="w-[50px] h-[50px] bg-[#000] rounded-full flex justify-center items-center">
-                    <Image src="/assets/icons/arrow_right.svg" alt="" width={24} height={24}/>
+                    <Image src="/assets/icons/arrow_right.svg" alt="" width={32} height={18}/>
                 </span>
             </div>
         </Link>

@@ -8,7 +8,7 @@ const Contact = () => {
     <div id="contact" className="font-bold font-monaSans">
       <div className="relative flex justify-center items-center">
           <h3 className="text-[120px] text-center">LET&#39;S TALK</h3>
-          <Image src="/assets/3d/hands_making_heart.png" alt="" width={200} height={200} className="absolute top-[70px]"/>
+          <Image src="/assets/3d/hands_making_heart.png" alt="" width={2000} height={1081} className="absolute top-[70px] h-[70px] w-[200px]"/>
       </div>
 
         <div className="flex md:flex-row flex-col items-center md:items-start justify-between gap-[50px]">
