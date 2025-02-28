@@ -60,6 +60,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             // @ts-expect-error: On s'assurera que le ref existe bel et bien
             stickyElement.current.removeEventListener('mouseenter', manageMouseOver);
             // @ts-expect-error: On s'assurera que le ref existe bel et bien
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             stickyElement.current.removeEventListener('mouseleave', manageMouseOut);
         }
     }, [isHovered]);
