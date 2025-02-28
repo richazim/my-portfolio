@@ -66,7 +66,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
     }, [isHovered]);
 
     return (
-        <motion.div className="absolute bg-white rounded-full mix-blend-exclusion" style={{
+        <motion.div className="absolute bg-white rounded-full mix-blend-exclusion pointer-events-none" style={{
             left: smoothMouse.x,
             top: smoothMouse.y,
         }} animate={{width: cursorSize, height: cursorSize}}>
