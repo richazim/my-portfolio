@@ -4,7 +4,8 @@ import {motion, useMotionValue, useSpring} from "framer-motion";
 
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
     const [isHovered, setIsHovered] = useState(false)
-    const cursorSize = isHovered ? 160 : 20;
+    // const cursorSize = isHovered ? 160 : 20;
+    const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 0, height: 0})
 
     const mouse = {
         x: useMotionValue(0),
@@ -25,14 +26,18 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
         const {clientX, clientY} = event;
         // @ts-expect-error: On s'assurera que le ref existe bel et bien
         const {left, top, height, width} = stickyElement.current.getBoundingClientRect();
-        const center = {x: left + width / 2, y: top + height / 2};
+        // const center = {x: left + width / 2, y: top + height / 2};
         if(isHovered){
             // const distance = {x: clientX - center.x, y: clientY - center.y};
-            mouse.x.set((center.x - cursorSize / 2));
-            mouse.y.set((center.y - cursorSize / 2));
+            const extraHeight = 10 * (height / width);
+            const extraWidth = + 10 * (width / width)
+            setCursorSizeAlternative({ width: width + extraWidth, height: height + extraHeight });
+            mouse.x.set(left - extraWidth / 2);
+            mouse.y.set(top - extraHeight / 2);
         }else{
-            mouse.x.set(clientX - cursorSize / 2);
-            mouse.y.set(clientY - cursorSize / 2);
+            setCursorSizeAlternative({ width: 20, height: 20});
+            mouse.x.set(clientX - cursorSizeAlternative.width / 2);
+            mouse.y.set(clientY - cursorSizeAlternative.width / 2);
         }
     }
 
@@ -65,10 +70,10 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
     }, [isHovered]);
 
     return (
-        <motion.div className="absolute bg-white rounded-full mix-blend-exclusion pointer-events-none" style={{
+        <motion.div className={`absolute bg-white mix-blend-exclusion pointer-events-none ${isHovered? '' : 'rounded-full'}`} style={{
             left: smoothMouse.x,
             top: smoothMouse.y,
-        }} animate={{width: cursorSize, height: cursorSize}}>
+        }} animate={{width: cursorSizeAlternative.width, height: cursorSizeAlternative.height}}>
 
         </motion.div>
     );
