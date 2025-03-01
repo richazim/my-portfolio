@@ -7,6 +7,9 @@ import Blogs from "@/components/parts/Blogs";
 import Contact from "@/components/parts/Contact";
 import Footer from "@/components/parts/Footer";
 import React from "react";
+import {getSongsRecommendation} from "@/actions/songRecommendation";
+
+const SONGS_RECOMMENDATIONS = await getSongsRecommendation();
 
 export default async function Portfolio() {
 
@@ -22,7 +25,7 @@ export default async function Portfolio() {
             <About/>
         </div>
 
-            <SongsRecommendation/>
+            <SongsRecommendation songs={SONGS_RECOMMENDATIONS}/>
 
         <div className="px-[20px] xl:px-[100px] flex flex-col justify-between gap-[78px] mt-[78px]">
             <Blogs/>

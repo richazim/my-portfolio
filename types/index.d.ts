@@ -29,3 +29,9 @@ type WorkCardRightPartProps = {
     demoImagePath: string,
     switchCase?: boolean
 }
+
+type recommendatedSong = {
+    id: string,
+    title: string,
+    thumbnail: string
+}

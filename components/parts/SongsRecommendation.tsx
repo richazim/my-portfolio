@@ -1,23 +1,75 @@
-import React from 'react';
-import Image from "next/image";
-import Link from "next/link";
-import {getSongsRecommendation} from "@/actions/songRecommendation";
+"use client"
 
-const SongsRecommendation = async () => {
-    const SONGS_RECOMMENDATIONS = await getSongsRecommendation();
+import React, {useEffect, useState} from 'react';
+import Song from "@/components/Song";
+import useMeasure from "react-use-measure";
+import {motion, animate, useMotionValue} from "framer-motion";
+
+
+const SongsRecommendation = ({songs} : {songs: recommendatedSong[]}) => {
+
+    const FAST_DURATION = 25;
+    const SLOW_DURATION = 75;
+
+    const [duration, setDuration] = useState(FAST_DURATION);
+
+    const [mustFinish, setMustFinish] = useState(false)
+    const [reRender, setReRender] = useState(false)
+
+    const [ref, {width}] = useMeasure();
+
+    const xTranslation = useMotionValue(0);
+
+    useEffect(() => {
+        const gapBetweenSongs = 20;
+        const finalPosition = -width / 2 - gapBetweenSongs;
+        let controls;
+
+        if(mustFinish){
+            controls = animate(xTranslation, [xTranslation.get(), finalPosition], {
+                ease: 'linear',
+                duration: duration * (1 - xTranslation.get() / finalPosition),
+                onComplete: () => {
+                    setMustFinish(false);
+                    setReRender(!reRender);
+                }
+            })
+
+        }else{
+            controls = animate(xTranslation, [0, finalPosition], {
+                ease: "linear",
+                duration: duration,
+                repeat: Infinity,
+                repeatType: "loop",
+                repeatDelay: 0
+            })
+        }
+
+        return controls?.stop;
+    }, [xTranslation, width, duration, reRender])
 
     return (
-        <div className="flex flex-col justify-between w-[100vw] overflow-hidden">
-            <section className="flex flex-row justify-between gap-[20px] items-center h-[300px]">
-                {/* @ts-expect-error: L'API Youtube n'a pas défini de type pour les reponses api. */}
-                {SONGS_RECOMMENDATIONS.map((song, index: number) => (
-                    <div key={index} className="flex items-center justify-center">
-                        <Link href={`https://youtube.com/watch?v=${song.id}`} target="_blank" className="h-[200px] w-[350px] flex justify-center items-center overflow-hidden">
-                            <Image src={song.thumbnail} alt="" width={480} height={360} className=""/>
-                        </Link>
-                    </div>
-                ))}
-            </section>
+        <div className="flex flex-col justify-between w-[100vw] overflow-hidden relative h-[300px]">
+            <div className="relative">
+                <motion.section className="flex flex-row justify-between gap-[20px] items-center absolute top-0 left-0"
+                                ref={ref}
+                                style={{x: xTranslation}}
+                                onHoverStart={() => {
+                                    setMustFinish(true)
+                                    setDuration(SLOW_DURATION)
+                                }}
+                                onHoverEnd={() => {
+                                    setMustFinish(true)
+                                    setDuration(FAST_DURATION)
+                                }}
+                >
+                    {[...songs, ...songs].map((song, index: number) => (
+                        <div key={index}>
+                            <Song id={song.id} thumbnail={song.thumbnail} title={song.title}/>
+                        </div>
+                    ))}
+                </motion.section>
+            </div>
 
             <div className='mt-[50px] flex justify-center items-center'>
                 <p className="text-center font-bold w-[400px]">
