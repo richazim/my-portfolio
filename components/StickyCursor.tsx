@@ -5,7 +5,7 @@ import {motion, useMotionValue, useSpring} from "framer-motion";
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
     const [isHovered, setIsHovered] = useState(false)
     // const cursorSize = isHovered ? 160 : 20;
-    const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 0, height: 0})
+    const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 20, height: 20})
 
     const mouse = {
         x: useMotionValue(0),
@@ -24,10 +24,10 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
         }
 
         const {clientX, clientY} = event;
-        // @ts-expect-error: On s'assurera que le ref existe bel et bien
-        const {left, top, height, width} = stickyElement.current.getBoundingClientRect();
         // const center = {x: left + width / 2, y: top + height / 2};
         if(isHovered){
+            // @ts-expect-error: On s'assurera que le ref existe bel et bien
+            const {left, top, height, width} = stickyElement.current.getBoundingClientRect();
             // const distance = {x: clientX - center.x, y: clientY - center.y};
             const extraHeight = 10 * (height / width);
             const extraWidth = + 10 * (width / width)
@@ -36,8 +36,9 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             mouse.y.set(top - extraHeight / 2);
         }else{
             setCursorSizeAlternative({ width: 20, height: 20});
+            console.log(cursorSizeAlternative)
             mouse.x.set(clientX - cursorSizeAlternative.width / 2);
-            mouse.y.set(clientY - cursorSizeAlternative.width / 2);
+            mouse.y.set(clientY - cursorSizeAlternative.height / 2);
         }
     }
 
@@ -67,7 +68,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             // eslint-disable-next-line react-hooks/exhaustive-deps
             stickyElement.current.removeEventListener('mouseleave', manageMouseOut);
         }
-    }, [isHovered]);
+    }, [isHovered, cursorSizeAlternative]);
 
     return (
         <motion.div className={`absolute bg-white mix-blend-exclusion pointer-events-none ${isHovered? '' : 'rounded-full'}`} style={{
