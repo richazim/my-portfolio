@@ -1,5 +1,6 @@
 import {ForwardedRef, useEffect, useState} from "react";
 import {motion, useMotionValue, useSpring} from "framer-motion";
+import {SPECIAL_ELEMENTS_FOR_CUSTOM_CURSOR} from "@/constants";
 
 
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
@@ -29,14 +30,13 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             // @ts-expect-error: On s'assurera que le ref existe bel et bien
             const {left, top, height, width} = stickyElement.current.getBoundingClientRect();
             // const distance = {x: clientX - center.x, y: clientY - center.y};
-            const extraHeight = 10 * (height / width);
-            const extraWidth = + 10 * (width / width)
+            const extraHeight = 20 * (height / width);
+            const extraWidth = 20 * (height / width)
             setCursorSizeAlternative({ width: width + extraWidth, height: height + extraHeight });
             mouse.x.set(left - extraWidth / 2);
             mouse.y.set(top - extraHeight / 2);
         }else{
             setCursorSizeAlternative({ width: 20, height: 20});
-            console.log(cursorSizeAlternative)
             mouse.x.set(clientX - cursorSizeAlternative.width / 2);
             mouse.y.set(clientY - cursorSizeAlternative.height / 2);
         }
@@ -56,6 +56,13 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
         // @ts-expect-error: On s'assurera que le ref existe bel et bien
         stickyElement.current.addEventListener('mouseenter', manageMouseOver);
 
+        // SPECIAL_ELEMENTS_FOR_CUSTOM_CURSOR.forEach((element) => {
+        //     const htmlElement = document.querySelector(element.class);
+        //     if(htmlElement){
+        //         htmlElement.addEventListener('mouseenter', manageMouseOver);
+        //     }
+        // })
+
         // @ts-expect-error: On s'assurera que le ref existe bel et bien
         stickyElement.current.addEventListener('mouseleave', manageMouseOut);
 
@@ -71,7 +78,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
     }, [isHovered, cursorSizeAlternative]);
 
     return (
-        <motion.div className={`absolute bg-white mix-blend-exclusion pointer-events-none ${isHovered? '' : 'rounded-full'}`} style={{
+        <motion.div className={`absolute bg-white mix-blend-exclusion pointer-events-none ${isHovered? 'rounded-[7px]' : 'rounded-full'}`} style={{
             left: smoothMouse.x,
             top: smoothMouse.y,
         }} animate={{width: cursorSizeAlternative.width, height: cursorSizeAlternative.height}}>

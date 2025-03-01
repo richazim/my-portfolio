@@ -11,7 +11,7 @@ import React from "react";
 export default async function Portfolio() {
 
   return (
-    <main className="relative overflow-x-hidden">
+    <main className="relative overflow-x-hidden bg-[#fff]">
         <Home/>
 
         <div className="px-[20px] md:px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">

@@ -29,3 +29,21 @@ export const WORKS_DATA: WorkDataType[] = [
         switchCase: true
     }
 ]
+
+export const SPECIAL_ELEMENTS_FOR_CUSTOM_CURSOR = [
+    {
+        class: "github"
+    },
+    {
+        class: 'linkedin'
+    },
+    {
+        class: 'home'
+    },
+    {
+        class: 'works'
+    },
+    {
+        class: 'about'
+    }
+]
