@@ -1,7 +1,5 @@
 import {ForwardedRef, useEffect, useState} from "react";
 import {motion, useMotionValue, useSpring} from "framer-motion";
-import {SPECIAL_ELEMENTS_FOR_CUSTOM_CURSOR} from "@/constants";
-
 
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
     const [isHovered, setIsHovered] = useState(false)
