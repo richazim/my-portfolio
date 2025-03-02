@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from "next/image";
 import ContactMenuBar from "@/components/ContactMenuBar";
-import Link from "next/link";
 
 const Contact = () => {
   return (
