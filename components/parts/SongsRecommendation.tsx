@@ -71,9 +71,9 @@ const SongsRecommendation = ({songs} : {songs: recommendatedSong[]}) => {
                 </motion.section>
             </div>
 
-            <div className='mt-[50px] flex justify-center items-center'>
+            <div className='mt-[10px] flex justify-center items-center text-[#1b79f5]'>
                 <p className="text-center font-bold w-[400px]">
-                    A FEW SONG I CAN RECOMMEND IF YOU&apos;RE LOOKING FOR SOME GOOD ONES
+                    HERE ARE A FEW SONGS I RECOMMEND IF YOU&apos;RE LOOKING FOR GOOD FLOWS.
                 </p>
             </div>
         </div>

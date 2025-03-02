@@ -3,7 +3,7 @@ import {motion, useMotionValue, useSpring} from "framer-motion";
 
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
     const [isHovered, setIsHovered] = useState(false)
-    // const cursorSize = isHovered ? 160 : 20;
+    // const cursorSize = isHovered ? 160 : 80;
     const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 20, height: 20})
 
     const mouse = {
@@ -18,9 +18,9 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
     }
 
     const manageMouseMove = (event: MouseEvent) => {
-        if(window.scrollY > 0){
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
+        // const target = event.target as HTMLElement;
+        // const parent = target.parentElement;
+        // const grandparent = parent?.parentElement;
 
         const {clientX, clientY} = event;
         // const center = {x: left + width / 2, y: top + height / 2};
@@ -34,7 +34,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
             mouse.x.set(left - extraWidth / 2);
             mouse.y.set(top - extraHeight / 2);
         }else{
-            setCursorSizeAlternative({ width: 20, height: 20});
+            setCursorSizeAlternative({ width: 40, height: 40});
             mouse.x.set(clientX - cursorSizeAlternative.width / 2);
             mouse.y.set(clientY - cursorSizeAlternative.height / 2);
         }
@@ -49,7 +49,14 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
 
     useEffect(() => {
         // @ts-expect-error: On s'assurera que la section #home existe bel et bien
-        document.querySelector('#home').addEventListener('mousemove', manageMouseMove);
+        document.querySelector('#home').addEventListener('mousemove', (e: MouseEvent) => {
+            manageMouseMove(e)
+            if(window.scrollY > 0){
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        });
+
+        // document.querySelector('') .... Pour implementer plus tard le sticky Cursor sur le menu de navigation egalement
 
         // @ts-expect-error: On s'assurera que le ref existe bel et bien
         stickyElement.current.addEventListener('mouseenter', manageMouseOver);
@@ -76,7 +83,7 @@ const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorE
     }, [isHovered, cursorSizeAlternative]);
 
     return (
-        <motion.div className={`absolute bg-white mix-blend-exclusion pointer-events-none ${isHovered? 'rounded-[7px]' : 'rounded-full'}`} style={{
+        <motion.div className={`absolute bg-[#ffc107] mix-blend-exclusion pointer-events-none ${isHovered? 'rounded-[7px]' : 'rounded-full'}`} style={{
             left: smoothMouse.x,
             top: smoothMouse.y,
         }} animate={{width: cursorSizeAlternative.width, height: cursorSizeAlternative.height}}>

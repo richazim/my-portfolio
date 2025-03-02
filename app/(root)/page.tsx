@@ -33,7 +33,7 @@ export default async function Portfolio() {
             <Contact/>
         </div>
 
-        <div className="w-screen h-[2px] bg-[#333] my-[50px]"></div>
+        <div className="w-screen h-[2px] bg-[#333] mt-[50px]"></div>
 
         <div className="px-[100px]">
             <Footer/>

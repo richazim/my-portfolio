@@ -9,10 +9,10 @@ const Home = () => {
     const stickyElement = useRef<HTMLAnchorElement>(null);
 
   return (
-    <section id="home" className='relative h-[100vh] overflow-auto bg-[url(/assets/images/hero-img.png)] bg-black'>
+    <section id="home" className='relative h-[100vh] overflow-auto text-white bg-black'>
         <Header ref={stickyElement}/>
 
-        <div className="">
+        <div className="text-[#ffc107]">
             <Profile/>
         </div>
 

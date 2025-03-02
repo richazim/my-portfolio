@@ -51,7 +51,7 @@ const clientComments = [
 const Testimonials = () => {
     return (
         <div className="flex flex-col justify-between gap-[20px]">
-            <div className="titles text-center font-bold font-monaSans">
+            <div className="titles text-center font-bold font-monaSans text-black">
                 <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TESTIMONIALS</h3>
                 <p>REAL COMMENTS FROM CLIENTS AND COLLABORATORS WHO</p>
                 <p>HAVE EXPERIENCED MY WORK FIRSTHAND</p>
@@ -66,7 +66,7 @@ const Testimonials = () => {
             </div>
 
             <div className="hireMePart flex justify-center items-center">
-                <Link href="https://www.freelancer.com/u/richazim" className="rounded-xl overflow-hidden w-[165px] h-[32px] relative">
+                <Link href="https://www.freelancer.com/u/richazim" className="rounded-xl overflow-hidden w-[165px] h-[32px] relative shadow-[0_0_39px_7px_rgba(0,0,0,0.38)]" target="_blank">
                     <Image src="/assets/icons/hiring-logo.svg" alt='' width={165} height={36} className=''/>
                 </Link>
             </div>

@@ -30,10 +30,10 @@ const backendTools = [
 const About = () => {
   return (
     <div id="about">
-        <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
+        <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
 
-        <div className="flex md:flex-row flex-col justify-between gap-[50px] leading-7 mt-[50px]">
-            <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px] font-bold">
+        <div className="flex md:flex-row flex-col justify-between gap-[50px] leading-7 mt-[50px] text-black">
+            <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px]">
                 <p>I specialize in creating high-converting landing pages and websites for SaaS, Web3 & AI startups. I’m passionate about building impactful software.</p>
 
                 <p>Outside of frontend development, I&#39;m an active leader in tech communities. As a member of Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I lead workshops and mentor others.</p>

@@ -7,7 +7,7 @@ import Image from "next/image";
 const NavigationMenuBar = () => {
   return (
     <div>
-      <ul className="flex flex-row bg-black font-bold">
+      <ul className="flex flex-row bg-black font-bold text-white">
           <Link href="/assets/images/cv-azim.png" className="p-[10px]" target="_blank">
               <li><Image src="/assets/icons/cv-icon.svg" alt="" height={20} width={20}/></li>
           </Link>
