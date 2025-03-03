@@ -27,7 +27,7 @@ export default async function Portfolio() {
 
             <SongsRecommendation songs={SONGS_RECOMMENDATIONS}/>
 
-        <div className="px-[20px] xl:px-[100px] flex flex-col justify-between gap-[78px] mt-[78px]">
+        <div className="px-[20px] lg:px-[100px] md:px-[50px] flex flex-col justify-between gap-[78px] mt-[78px]">
             <Blogs/>
 
             <Contact/>
@@ -35,9 +35,8 @@ export default async function Portfolio() {
 
         <div className="w-screen h-[2px] bg-[#333] mt-[50px]"></div>
 
-        <div className="px-[100px]">
-            <Footer/>
-        </div>
+
+        <Footer/>
     </main>
   );
 }

@@ -13,16 +13,16 @@ export const youtubeSongsRecommendtationsIds = [
 export const WORKS_DATA: WorkDataType[] = [
     {
         title: 'Magags',
-        description: 'Community based fun social media app created by richazim to help programmers have fun during day',
-        technologies: ["React Native", "Appwrite"],
+        description: 'Community based fun social media app created by Azim to help programmers have fun during day',
+        technologies: ["React", "React Native", "Appwrite", "Apis"],
         githubLink: 'https://github.com/richazim/magags',
         demoLink: 'https://github.com/richazim/magags',
         demoImagePath: '/assets/images/thumbnail.png'
     },
     {
         title: 'Magags',
-        description: 'Community based fun social media app created by richazim to help programmers have fun during day',
-        technologies: ["React Native", "Appwrite"],
+        description: 'Community based fun social media app created by Azim to help programmers have fun during day',
+        technologies: ["React", "React Native", "Appwrite", "Apis"],
         githubLink: 'https://github.com/richazim/magags',
         demoLink: 'https://github.com/richazim/magags',
         demoImagePath: '/assets/images/thumbnail.png',

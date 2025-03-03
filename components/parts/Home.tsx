@@ -19,7 +19,7 @@ const Home = () => {
         <div className="flex flex-row md:justify-between justify-center mb-[20px] px-[40px]">
           <div className="flex flex-col">
             <p>Self-taught Fullstack Developper.</p>
-            <p>I build website from start to finish.</p>
+            <p>I build websites from start to finish.</p>
           </div>
 
           <div className="md:flex hidden flex-col ">
@@ -28,9 +28,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="absolute w-full bottom-[30px] flex justify-center items-center">
-            <NavigationMenuBar/>
-        </div>
+        <NavigationMenuBar/>
 
         <StickyCursor stickyElement={stickyElement}/>
     </section>

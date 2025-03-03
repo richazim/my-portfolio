@@ -27,10 +27,8 @@ export const WorkCardLeftPart = ({
 
         <p className={`absolute top-[250px] ${switchCase && 'right-[30px] text-right'} text-[20px] capitalize text-[#330c2f]`}>{truncateText(description, 60)}</p>
 
-        <p className={`absolute top-[350px] text-[#ffc107] ${switchCase && 'right-[30px]'} flex flex-row justify-between gap-[20px] font-bold text-[25px] uppercase`}>
-            {technologies && technologies.map((technology, index) => (
-                <span key={index}>{technology}</span>
-            ))}
+        <p className={`absolute top-[350px] text-[#ffc107] ${switchCase && 'right-[30px]'} flex flex-row justify-between gap-[10px] font-bold text-[15px] uppercase`}>
+            {technologies.join(', ')}
         </p>
     </div>
 ;

@@ -4,11 +4,11 @@ import {motion, useMotionValue, useSpring} from "framer-motion";
 const StickyCursor = ({stickyElement} : {stickyElement: ForwardedRef<HTMLAnchorElement>}) => {
     const [isHovered, setIsHovered] = useState(false)
     // const cursorSize = isHovered ? 160 : 80;
-    const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 20, height: 20})
+    const [cursorSizeAlternative, setCursorSizeAlternative] = useState({width: 40, height: 40})
 
     const mouse = {
-        x: useMotionValue(0),
-        y: useMotionValue(0)
+        x: useMotionValue(50),
+        y: useMotionValue(200)
     }
 
     const smoothOptions = {damping: 20, stiffness: 300, mass: 0.01};
