@@ -1,7 +1,7 @@
 "use client"
 import React, {useRef} from 'react'
 import Header from './Header'
-import Profile from '../Profile'
+import Profile from '../components/Profile'
 import NavigationMenuBar from "@/components/NavigationMenuBar";
 import StickyCursor from "@/components/StickyCursor";
 

@@ -1,6 +1,6 @@
 "use client"
 import React, {ForwardedRef, forwardRef} from 'react'
-import ContactMenuBar from '../ContactMenuBar'
+import ContactMenuBar from '../components/ContactMenuBar'
 import Link from "next/link";
 
 const Header = forwardRef((props, ref: ForwardedRef<HTMLAnchorElement>) => {
