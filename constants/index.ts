@@ -13,19 +13,19 @@ export const youtubeSongsRecommendtationsIds = [
 export const WORKS_DATA: WorkDataType[] = [
     {
         title: 'Magags',
-        description: 'Community based fun social media app created by Azim to help programmers have fun during day',
-        technologies: ["React", "React Native", "Appwrite", "Apis"],
+        description: 'Magags is a cross-platform mobile application (iOS and Android) that allows users to share short, funny videos.',
+        technologies: ["React", "React Native", "Appwrite API"],
         githubLink: 'https://github.com/richazim/magags',
         demoLink: 'https://github.com/richazim/magags',
-        demoImagePath: '/assets/images/thumbnail.png'
+        demoImagePath: '/assets/images/cover-magags.png'
     },
     {
-        title: 'Magags',
-        description: 'Community based fun social media app created by Azim to help programmers have fun during day',
-        technologies: ["React", "React Native", "Appwrite", "Apis"],
-        githubLink: 'https://github.com/richazim/magags',
-        demoLink: 'https://github.com/richazim/magags',
-        demoImagePath: '/assets/images/thumbnail.png',
+        title: 'sous-contrôle',
+        description: 'Sous-Contrôle is a minimal, lightweight, and comprehensive PHP framework that allows its users to have full control over their source code.',
+        technologies: ["PHP", "PEST", "Mockery"],
+        githubLink: 'https://github.com/richazim/sous-controle',
+        demoLink: 'https://github.com/richazim/sous-controle',
+        demoImagePath: '/assets/images/cover-framework.png',
         switchCase: true
     }
 ]
