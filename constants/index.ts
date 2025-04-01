@@ -27,7 +27,23 @@ export const WORKS_DATA: WorkDataType[] = [
         demoLink: 'https://github.com/richazim/sous-controle',
         demoImagePath: '/assets/images/cover-framework.png',
         switchCase: true
-    }
+    },
+    {
+        title: 'vtc',
+        description: 'VTC is a custom web application for booking a VTC driver in France.',
+        technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
+        githubLink: 'https://github.com/richazim/vtc',
+        demoLink: 'https://vtc-ui.vercel.app',
+        demoImagePath: '/assets/images/cover-framework.png'
+    },
+    {
+        title: 'driveclone',
+        description: 'DriveClone is an open-source Google Drive clone that allows users to store all types of files.',
+        technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
+        githubLink: 'https://github.com/richazim/driveclone',
+        demoLink: 'https://driveclone.vercel.app',
+        demoImagePath: '/assets/images/cover-framework.png'
+    },
 ]
 
 export const SPECIAL_ELEMENTS_FOR_CUSTOM_CURSOR = [

@@ -9,7 +9,19 @@ const nextConfig: NextConfig = {
                 hostname: "i.ytimg.com",
                 port: '',
                 pathname: '/vi/**',
-            }
+            },
+            {
+                protocol: 'https',
+                hostname: "miro.medium.com",
+                port: '',
+                pathname: '/v2/**',
+            },
+            {
+                protocol: 'https',
+                hostname: "www.folio3.com",
+                port: '',
+                pathname: '/mobile/**',
+            },
         ]
     }
 };

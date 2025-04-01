@@ -21,7 +21,7 @@ const BlogCard = ({
             <div className="flex flex-row justify-between items-center">
                 <span className="">{date}</span>
 
-                <Link href={link} className="w-[50px] h-[50px] bg-[#000] rounded-full flex justify-center items-center my-[20px]">
+                <Link href={link} target="_blank" className="w-[50px] h-[50px] bg-[#000] rounded-full flex justify-center items-center my-[20px]">
                     <Image src="/assets/icons/arrow_right.svg" alt="" width={32} height={18}/>
                 </Link>
             </div>

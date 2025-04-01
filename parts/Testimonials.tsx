@@ -5,48 +5,49 @@ import Link from "next/link";
 
 const clientComments = [
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "Alice Dupont",
+        "profile": "/assets/images/testimonials/alice.png",
+        "profession": "CEO of TechWave",
+        "location": "Paris, France",
+        "comment": "Working with Azim was an absolute pleasure. His dedication and expertise turned our vision into reality. Highly recommended!"
     },
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "John Smith",
+        "profile": "/assets/images/testimonials/bertrand.png",
+        "profession": "Lead Developer at CodeCrafters",
+        "location": "San Francisco, USA",
+        "comment": "Azim is a talented developer with a great sense of problem-solving. His work exceeded our expectations in every way."
     },
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "Sofia Martínez",
+        "profile": "/assets/images/testimonials/emmanuel.png",
+        "profession": "Founder of InnovateX",
+        "location": "Madrid, Spain",
+        "comment": "I needed a robust web solution, and Azim delivered beyond what I imagined. His work is clean, efficient, and innovative."
     },
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "Liam O’Connor",
+        "profile": "/assets/images/testimonials/john.png",
+        "profession": "CTO at FutureSoft",
+        "location": "Dublin, Ireland",
+        "comment": "Azim’s technical skills are impressive, but what stands out the most is his ability to understand client needs and translate them into exceptional work."
     },
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "Bertrand Tanaka",
+        "profile": "/assets/images/testimonials/liam.png",
+        "profession": "UX Designer at Visionary Labs",
+        "location": "Tokyo, Japan",
+        "comment": "Azim’s ability to seamlessly integrate functionality with a stunning user experience is remarkable. A true professional!"
     },
     {
-        name: 'Force Bernard C.',
-        profile: '/assets/images/profile.png',
-        profession: 'Founder of Marjan',
-        location: 'Marjan',
-        comment: 'Azim! I like him so much. He is kind guy always funny. But his good part is he is very serious when he works. I tell him to make me a mobile application. Guess what! Not only he make it but also he make it more better.',
+        "name": "Dung Bu",
+        "profile": "/assets/images/testimonials/dung.png",
+        "profession": "Entrepreneur",
+        "location": "Dakar, Senegal",
+        "comment": "I entrusted Azim with my startup’s website, and he delivered a masterpiece. His attention to detail and responsiveness are unmatched."
     }
 ]
+
 
 const Testimonials = () => {
     return (
