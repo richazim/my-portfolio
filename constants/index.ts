@@ -34,7 +34,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
         githubLink: 'https://github.com/richazim/vtc',
         demoLink: 'https://vtc-ui.vercel.app',
-        demoImagePath: '/assets/images/cover-framework.png'
+        demoImagePath: '/assets/images/works/cover-vtc.png'
     },
     {
         title: 'driveclone',
@@ -42,7 +42,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
         githubLink: 'https://github.com/richazim/driveclone',
         demoLink: 'https://driveclone.vercel.app',
-        demoImagePath: '/assets/images/cover-framework.png'
+        demoImagePath: '/assets/images/works/cover-driveclone.png'
     },
 ]
 
