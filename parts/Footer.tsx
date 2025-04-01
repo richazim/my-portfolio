@@ -13,10 +13,6 @@ const Footer = () => {
                         <span className="underline break-keep">Azim Saibou</span>
                     </Link></div>
             </footer>
-
-            <div className="specialThanks">
-                <div dangerouslySetInnerHTML={{__html: `<!-- Portfolio design inspired by Victor Williams Portfolio (https://victorwilliams.me) --> <!-- Huge thanks to Victor Williams for sharing is awesome portfolio design! 🙌 --> <!-- Thank you very much! -->`}} />
-            </div>
         </div>
     );
 };
