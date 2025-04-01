@@ -17,7 +17,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React", "React Native", "Appwrite API"],
         githubLink: 'https://github.com/richazim/magags',
         demoLink: 'https://github.com/richazim/magags',
-        demoImagePath: '/assets/images/cover-magags.png'
+        demoImagePath: '/assets/images/works/cover-magags.png'
     },
     {
         title: 'sous-contrôle',
@@ -25,7 +25,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["PHP", "PEST", "Mockery"],
         githubLink: 'https://github.com/richazim/sous-controle',
         demoLink: 'https://github.com/richazim/sous-controle',
-        demoImagePath: '/assets/images/cover-framework.png',
+        demoImagePath: '/assets/images/works/cover-framework.png',
         switchCase: true
     },
     {
