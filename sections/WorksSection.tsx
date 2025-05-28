@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from 'react'
 import WorkCard from "@/components/WorkCard";
 import {WORKS_DATA} from "@/constants";

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { revealSection } from '@/animations/reveal/sectionsRevealer';
 import ContactMenuBar from '@/components/ContactMenuBar'
 import Link from "next/link";

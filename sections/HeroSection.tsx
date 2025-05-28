@@ -1,15 +1,10 @@
-"use client"
-import React, {useLayoutEffect} from 'react'
+"use client";
+import React from 'react'
 import Profile from '@/components/Profile'
 import NavigationMenuBar from "@/components/NavigationMenuBar";
 import HeaderSection from './NavSection';
 
 const HeroSection = () => {
-    
-
-    useLayoutEffect(() => {
-      
-    }, [])
 
   return (
     <section id="hero" className='relative h-[100vh] overflow-auto text-white bg-black'>

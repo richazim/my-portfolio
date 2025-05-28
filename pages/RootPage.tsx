@@ -1,24 +1,25 @@
 "use client";
 import React from "react";
-import HomeSection from "@/sections/HeroSection";
-import WorksSection from "@/sections/WorksSection";
-import TestimonialsSection from "@/sections/TestimonialsSection";
-import AboutSection from "@/sections/AboutSection";
-import SongsRecommendationSection from "@/sections/SongsRecommendationSection";
-import BlogsSection from "@/sections/BlogsSection";
-import ContactSection from "@/sections/ContactSection";
-import FooterSection from "@/sections/FooterSection";
+import HeroSection from "@/sections/HeroSection";
+// import WorksSection from "@/sections/WorksSection";
+// import TestimonialsSection from "@/sections/TestimonialsSection";
+// import AboutSection from "@/sections/AboutSection";
+// import SongsRecommendationSection from "@/sections/SongsRecommendationSection";
+// import BlogsSection from "@/sections/BlogsSection";
+// import ContactSection from "@/sections/ContactSection";
+// import FooterSection from "@/sections/FooterSection";
 import { youtubeSongs } from "@/types/youtube";
 
 
 
 export default function RootPage({songs}: {songs: youtubeSongs[]}) {
+  console.log("songs", songs)
 
   return (
     <main className="relative overflow-x-hidden bg-[#fff]">
-        <HomeSection/>
+        <HeroSection/>
 
-        <div className="px-[20px] md:px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
+        {/* <div className="px-[20px] md:px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
             <WorksSection/>
 
             <TestimonialsSection/>
@@ -37,7 +38,7 @@ export default function RootPage({songs}: {songs: youtubeSongs[]}) {
         <div className="w-screen h-[2px] bg-[#333] mt-[50px]"></div>
 
 
-        <FooterSection/>
+        <FooterSection/> */}
     </main>
   );
 }
