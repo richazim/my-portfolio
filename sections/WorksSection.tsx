@@ -3,7 +3,7 @@ import React from 'react'
 import WorkCard from "@/components/WorkCard";
 import {WORKS_DATA} from "@/constants";
 
-const Works = () => {
+const WorksSection = () => {
   return (
       <div id="works">
         <div className="titles text-center font-bold font-monaSans text-[#ffc107]">
@@ -31,4 +31,4 @@ const Works = () => {
   )
 }
 
-export default Works
+export default WorksSection

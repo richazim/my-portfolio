@@ -3,7 +3,7 @@ import React from 'react'
 import Image from "next/image";
 import ContactMenuBar from "@/components/ContactMenuBar";
 
-const Contact = () => {
+const ContactSection = () => {
   return (
     <div id="contact" className="font-monaSans">
       <div className="relative flex justify-center items-center text-[#ffc107] font-bold">
@@ -23,4 +23,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactSection

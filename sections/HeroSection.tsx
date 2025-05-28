@@ -1,16 +1,19 @@
 "use client"
-import React, {useRef} from 'react'
-import Header from './Header'
+import React, {useLayoutEffect} from 'react'
 import Profile from '@/components/Profile'
 import NavigationMenuBar from "@/components/NavigationMenuBar";
-import StickyCursor from "@/components/StickyCursor";
+import HeaderSection from './NavSection';
 
-const Home = () => {
-    const stickyElement = useRef<HTMLAnchorElement>(null);
+const HeroSection = () => {
+    
+
+    useLayoutEffect(() => {
+      
+    }, [])
 
   return (
-    <section id="home" className='relative h-[100vh] overflow-auto text-white bg-black'>
-        <Header ref={stickyElement}/>
+    <section id="hero" className='relative h-[100vh] overflow-auto text-white bg-black'>
+        <HeaderSection/>
 
         <div className="text-[#ffc107]">
             <Profile/>
@@ -30,9 +33,9 @@ const Home = () => {
 
         <NavigationMenuBar/>
 
-        <StickyCursor stickyElement={stickyElement}/>
+        {/* <StickyCursor stickyElement={stickyHeaderRef}/> */}
     </section>
   )
 }
 
-export default Home
+export default HeroSection

@@ -4,9 +4,10 @@ import React, {useEffect, useState} from 'react';
 import Song from "@/components/Song";
 import useMeasure from "react-use-measure";
 import {motion, animate, useMotionValue} from "framer-motion";
+import { youtubeSongs } from '@/types/youtube';
 
 
-const SongsRecommendation = ({songs} : {songs: recommendatedSong[]}) => {
+const SongsRecommendationSection = ({songs} : {songs: youtubeSongs[]}) => {
 
     const FAST_DURATION = 25;
     const SLOW_DURATION = 75;
@@ -80,4 +81,4 @@ const SongsRecommendation = ({songs} : {songs: recommendatedSong[]}) => {
     );
 };
 
-export default SongsRecommendation;
+export default SongsRecommendationSection;

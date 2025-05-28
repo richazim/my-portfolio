@@ -49,7 +49,7 @@ const clientComments = [
 ]
 
 
-const Testimonials = () => {
+const TestimonialsSection = () => {
     return (
         <div className="flex flex-col justify-between gap-[20px]">
             <div className="titles text-center font-bold font-monaSans text-black">
@@ -75,4 +75,4 @@ const Testimonials = () => {
     );
 };
 
-export default Testimonials;
+export default TestimonialsSection;

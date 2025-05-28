@@ -27,7 +27,7 @@ const backendTools = [
     'Appwrite'
 ]
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div id="about">
         <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
@@ -59,4 +59,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutSection

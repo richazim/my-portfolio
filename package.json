@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "gsap": "^3.12.7",
+    "gsap": "^3.13.0",
     "motion": "^12.4.7",
     "next": "15.1.7",
     "react": "^19.0.0",

@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-const Footer = () => {
+const FooterSection = () => {
     return (
         <div className="sm:px-[100px] px-0">
             <footer className="flex flex-row sm:justify-between sm:gap-0 gap-[70px] justify-center items-center uppercase font-bold md:text-[14px] text-[10px] text-black my-[30px]">
@@ -17,4 +17,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterSection;

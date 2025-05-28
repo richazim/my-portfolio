@@ -22,7 +22,7 @@ const threeBestBlogs = [
     }
 ]
 
-const Blogs = () => {
+const BlogsSection = () => {
     return (
         <div className="">
             <div className="text-black">
@@ -48,4 +48,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default BlogsSection;
