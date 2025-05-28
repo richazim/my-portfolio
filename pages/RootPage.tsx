@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroSection from "@/sections/HeroSection";
 import WorksSection from "@/sections/WorksSection";
 import TestimonialsSection from "@/sections/TestimonialsSection";
@@ -8,12 +8,21 @@ import SongsRecommendationSection from "@/sections/SongsRecommendationSection";
 import BlogsSection from "@/sections/BlogsSection";
 import ContactSection from "@/sections/ContactSection";
 import FooterSection from "@/sections/FooterSection";
+import { getSongsRecommendation } from "@/actions/songRecommendation";
 import { youtubeSongs } from "@/types/youtube";
 
 
 
-export default function RootPage({songs}: {songs: youtubeSongs[]}) {
+export default function RootPage() {
+  const [songs, setSongs] = useState<youtubeSongs[]>([]);
 
+  useEffect(() => {
+    const getYoutubeDatas = async () => {
+      const data = await getSongsRecommendation();
+      setSongs(data);
+    }
+    getYoutubeDatas();
+  }, [])
   return (
     <main className="relative overflow-x-hidden bg-[#fff]">
         <HeroSection/>
