@@ -1,5 +1,5 @@
 "use client";
-import { revealSection } from '@/animations/reveal/sectionsRevealer';
+import { revealBoxOne } from '@/animations/reveal/revealBox';
 import ContactMenuBar from '@/components/ContactMenuBar'
 import Link from "next/link";
 import { useLayoutEffect, useRef } from 'react';
@@ -9,7 +9,7 @@ const NavSection = () => {
 
   useLayoutEffect(() => {
     if(!navSectionRef.current) return;
-    revealSection(navSectionRef.current, 50, 0, 5.5);
+    revealBoxOne(navSectionRef.current, {opacity: 0, y: 50}, {opacity: 1, y: 0, delay: 5.5, duration: 1});
   }, [])
   return (
     <div ref={navSectionRef} className="flex flex-row sm:justify-between justify-center py-[30px] px-[30px] font-bold">

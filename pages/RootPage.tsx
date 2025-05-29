@@ -23,8 +23,9 @@ export default function RootPage() {
     }
     getYoutubeDatas();
   }, [])
+
   return (
-    <main className="relative overflow-x-hidden bg-[#fff]">
+    <main className="relative overflow-x-hidden bg-[#0E1016]">
         <HeroSection/>
 
         <div className="px-[20px] md:px-[100px] flex flex-col justify-between gap-[78px] mb-[78px]">
