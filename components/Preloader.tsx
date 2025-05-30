@@ -7,26 +7,29 @@ const timeline = gsap.timeline();
 
 
 const Preloader = () => {
-    const preloaderRef = useRef(null);
-    const textsContainerRef = useRef(null);
+    const preloaderContainerRef = useRef(null);
+    const titlesContainerRef = useRef(null);
+    const titleOneRef = useRef(null);
+    const titleTwoRef = useRef(null);
+    const titleThreeRef = useRef(null);
 
     useEffect(() => {
         timeline
-            .to(textsContainerRef.current, { // Rendre le conteneur des titres visible
+            .to(titlesContainerRef.current, { // Rendre le conteneur des titres visible
                 opacity: 1,
                 ease: "Power3.easeOut",
                 duration: 0
             })
-            .from(["#text1", "#text2", "#text3"], { // Faire entrer les titre un a un
+            .from([titleOneRef.current, titleTwoRef.current, titleThreeRef.current], { // Faire entrer les titre un a un
                 y: 80,
                 stagger: 0.4,
-                skewY: 10,
+                skewY: 10, // Penché les titre à l'angle de 10° dans le sens horaire
                 duration: 1.5,
                 ease: "Power3.easeOut",
                 delay: 1
             })
-            .to(["#text1", "#text2", "#text3"], { // Faire sortir les titre un a un
-                y: 90,
+            .to([titleOneRef.current, titleTwoRef.current, titleThreeRef.current], { // Faire sortir les titre un a un
+                y: 100,
                 skewY: -20,
                 stagger: 0.2,
                 ease: "Power3.easeOut",
@@ -40,15 +43,15 @@ const Preloader = () => {
                 duration: 0.01
             })
             .to( // Raccourcir la hauteur du preloader
-                preloaderRef.current,
+                preloaderContainerRef.current,
                 {
                     height: "0vh",
                     ease: "Power3.easeOut",
                     duration: 1.5
                 },
-                "-=0.5"
+                "-=0.5" // Fait décaler cette animation de -0.5 seconde de la fin de l'animation précédente
             )
-            .to(preloaderRef.current, { // effacer le preloader du dom
+            .to(preloaderContainerRef.current, { // effacer le preloader du dom
                 css:{
                     display: "none"
                 },
@@ -58,16 +61,16 @@ const Preloader = () => {
     }, []);
 
     return (
-        <div ref={preloaderRef} className="fixed h-screen w-screen left-0 bottom-0 z-10 bg-[#0e1016] flex justify-center items-center">
+        <div ref={preloaderContainerRef} className="fixed h-screen w-screen left-0 bottom-0 z-10 bg-[#0e1016] flex justify-center items-center">
 
 
-            <div ref={textsContainerRef} className="h-[100px] overflow-hidden text-[30px] text-[#e4ded7] font-extrabold flex items-center justify-center gap-[5px] opacity-0">
+            <div ref={titlesContainerRef} className="h-[100px] overflow-hidden text-[30px] text-[#e4ded7] font-extrabold flex items-center justify-center gap-[5px] opacity-0">
 
-                <span id="text1">Programmer,</span>
+                <span id="text1" ref={titleOneRef}>Programmeur,</span>
 
-                <span id="text2">Developer,</span>
+                <span id="text2" ref={titleTwoRef}>Développeur,</span>
 
-                <span id="text3">Designer.</span>
+                <span id="text3" ref={titleThreeRef}>Designer.</span>
 
             </div>
 

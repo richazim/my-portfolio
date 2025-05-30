@@ -4,8 +4,9 @@ import Image from "next/image";
 import React, {useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
 import {truncateText} from "@/utils/truncateText";
+import { SongProps } from "@/types/songs";
 
-const Song = ({id, thumbnail, title}: {id: string, thumbnail: string, title: string}) => {
+const Song = ({id, thumbnail, title}: SongProps) => {
     const [showOverlay, setShowOverlay] = useState(false)
     return (
         <motion.div className="relative flex items-center justify-center"

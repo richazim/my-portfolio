@@ -73,8 +73,8 @@ const SongsRecommendationSection = ({songs} : {songs: youtubeSongs[]}) => {
             </div>
 
             <div className='mt-[10px] flex justify-center items-center text-[#1b79f5]'>
-                <p className="text-center font-bold w-[400px]">
-                    HERE ARE A FEW SONGS I RECOMMEND IF YOU&apos;RE LOOKING FOR GOOD FLOWS.
+                <p className="text-center font-bold w-[400px] capitalize">
+                    Voici quelques chansons que je recommande si vous cherchez de bons flows.
                 </p>
             </div>
         </div>

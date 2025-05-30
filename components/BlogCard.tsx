@@ -2,13 +2,14 @@ import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import {truncateText} from "@/utils/truncateText";
+import { BlogCardProps } from '@/types/blogs';
 
 const BlogCard = ({
     title,
     thumbnail,
     link,
     date
-                  }: {title: string, thumbnail: string, link: string, date: string}) => {
+                  }: BlogCardProps) => {
 
     return (
         <div className="rounded-xl block px-[5%] mx-auto shadow-[0_0_39px_7px_rgba(0,0,0,0.38)] bg-[#212531]">

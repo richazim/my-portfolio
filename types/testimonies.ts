@@ -4,5 +4,5 @@ export type ClientComment = {
     profession: string;
     location: string;
     comment: string;
-  };
+};
   

@@ -5,14 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { clientComments } from '@/data/testimonies';
 
-
 const TestimonialsSection = () => {
     return (
         <div className="flex flex-col justify-between gap-[20px]">
             <div className="titles text-center font-bold">
-                <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TESTIMONIALS</h3>
-                <p>REAL COMMENTS FROM CLIENTS AND COLLABORATORS WHO</p>
-                <p>HAVE EXPERIENCED MY WORK FIRSTHAND</p>
+                <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TÉMOIGNAGES</h3>
+                <p>COMMENTAIRES AUTHENTIQUES DE CLIENTS ET COLLABORATEURS QUI</p>
+                <p>ONT EXPÉRIMENTÉ MON TRAVAIL DE PREMIÈRE MAIN</p>
             </div>
 
             <div className="cards grid lg:grid-cols-3 md:grid-cols-2  gap-[20px]">

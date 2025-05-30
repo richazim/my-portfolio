@@ -5,27 +5,27 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <div id="about">
-        <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
+        <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">JE DÉVELOPPE DU CODE PROPRE, DES APPLICATIONS ROBUSTES ET DES EXPÉRIENCES UTILISATEUR FLUIDES.</p>
 
         <div className="flex md:flex-row flex-col justify-between gap-[50px] mt-[50px] text-[#e4ded7] font-medium  leading-relaxed tracking-wide">
             <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px] ">
-                <p>I specialize in creating high-converting landing pages and websites for SaaS, Web3 & AI startups. I’m passionate about building impactful software.</p>
+                <p>Je me spécialise dans la création de pages de destination et de sites web à fort taux de conversion pour les startups SaaS, Web3 et IA. Je suis passionné par le développement de logiciels percutants.</p>
 
-                <p>Outside of frontend development, I&#39;m an active leader in tech communities. As a member of Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I lead workshops and mentor others.</p>
+                <p>En dehors du développement frontend, je suis un leader actif dans les communautés technologiques. En tant que membre des Google Developer Student Clubs et des Microsoft Learn Student Ambassadors, je dirige des ateliers et j&apos;accompagne d&apos;autres personnes.</p>
 
-                <p>When I&#39;m not coding, I’m watching anime, hanging out with friends, supporting Manches ter United, or exploring new music genres like RnB, UK Drill, and Chill Rap.</p>
+                <p>Quand je ne code pas, je regarde des anime, je passe du temps avec mes amis, je soutiens Manchester United ou j&apos;explore de nouveaux genres musicaux comme le RnB, le UK Drill et le Chill Rap.</p>
 
-                <p>I’m currently working on exciting projects that I can’t wait to share, but I’m always open to new opportunities and collaborations.</p>
+                <p>Je travaille actuellement sur des projets excitants que j’ai hâte de partager, mais je suis toujours ouvert à de nouvelles opportunités et collaborations.</p>
             </section>
 
             <aside className='flex flex-col justify-between gap-[30px]'>
                 <div>
-                    <h3 className="text-[20px] font-bold">Frontend Tools</h3>
+                    <h3 className="text-[20px] font-bold">Outils Frontend</h3>
                     <p>{frontendTools.join(', ') + '.'}</p>
                 </div>
 
                 <div>
-                    <h3 className="text-[20px] font-bold">Backend Tools</h3>
+                    <h3 className="text-[20px] font-bold">Outils Backend</h3>
                     <p>{backendTools.join(', ') + '.'}</p>
                 </div>
             </aside>

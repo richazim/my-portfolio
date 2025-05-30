@@ -13,15 +13,15 @@ export const youtubeSongsRecommendtationsIds = [
 export const WORKS_DATA: WorkDataType[] = [
     {
         title: 'Magags',
-        description: 'Magags is a cross-platform mobile application (iOS and Android) that allows users to share short, funny videos.',
+        description: 'Magags est une application mobile multiplateforme (iOS et Android) qui permet aux utilisateurs de partager de courtes vidéos amusantes.',
         technologies: ["React", "React Native", "Appwrite API"],
         githubLink: 'https://github.com/richazim/magags',
         demoLink: 'https://github.com/richazim/magags',
         demoImagePath: '/assets/images/works/cover-magags.png'
     },
     {
-        title: 'sous-contrôle',
-        description: 'Sous-Contrôle is a minimal, lightweight, and comprehensive PHP framework that allows its users to have full control over their source code.',
+        title: 'Sous-Contrôle',
+        description: 'Sous-Contrôle est un framework PHP minimal, léger et complet qui permet à ses utilisateurs d’avoir un contrôle total sur leur code source.',
         technologies: ["PHP", "PEST", "Mockery"],
         githubLink: 'https://github.com/richazim/sous-controle',
         demoLink: 'https://github.com/richazim/sous-controle',
@@ -29,16 +29,16 @@ export const WORKS_DATA: WorkDataType[] = [
         switchCase: true
     },
     {
-        title: 'vtc',
-        description: 'VTC is a custom web application for booking a VTC driver in France.',
+        title: 'VTC',
+        description: 'VTC est une application web personnalisée pour réserver un chauffeur VTC en France.',
         technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
         githubLink: 'https://github.com/richazim/vtc',
         demoLink: 'https://vtc-ui.vercel.app',
         demoImagePath: '/assets/images/works/cover-vtc.png'
     },
     {
-        title: 'driveclone',
-        description: 'DriveClone is an open-source Google Drive clone that allows users to store all types of files.',
+        title: 'DriveClone',
+        description: 'DriveClone est un clone open-source de Google Drive qui permet aux utilisateurs de stocker tous types de fichiers.',
         technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
         githubLink: 'https://github.com/richazim/driveclone',
         demoLink: 'https://driveclone.vercel.app',
