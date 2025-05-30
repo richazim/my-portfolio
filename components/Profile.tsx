@@ -32,7 +32,7 @@ const Profile = () => {
   return (
     <div className='h-[500px] relative'>
         <h2 className='font-bold text-center w-full h-[500px] md:text-[210px] text-[80px] leading-none relative flex flex-col items-center overflow-hidden'>
-            <span ref={refAzim} className='md:relative absolute md:top-0 top-[105px]'>AZIM</span>
+            <span ref={refAzim} className='md:relative absolute md:top-0 top-[105px] text-[#ffc107]'>AZIM</span>
             <span ref={refSaibou} className='absolute top-[175px]'>SAIBOU</span>
         </h2> 
 

@@ -10,7 +10,7 @@ const HeroSection = () => {
     <section id="hero" className='relative h-[100vh] overflow-auto text-white bg-black'>
         <HeaderSection/>
 
-        <div className="text-[#ffc107]">
+        <div>
             <Profile/>
         </div>
 
