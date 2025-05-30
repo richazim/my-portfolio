@@ -11,7 +11,7 @@ const NavigationMenuBar = () => {
           <Link href="/assets/images/cv-azim.png" className="p-[10px]" target="_blank">
               <li><Image src="/assets/icons/cv-icon.svg" alt="" height={20} width={20}/></li>
           </Link>
-          <CustomLink name="Accueil" url="#home" className="p-[10px]"/>
+          <CustomLink name="Accueil" url="#hero" className="p-[10px]"/>
           <CustomLink name="Projets" url="#works" className="p-[10px]"/>
           <CustomLink name="À propos" url="#about" className="p-[10px]"/>
           <CustomLink name="Contact" url="#contact" className="p-[10px]"/>

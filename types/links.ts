@@ -1,0 +1,1 @@
+export type CustomLinkProps = {name: string, url: string, className?: string, target?: string}
