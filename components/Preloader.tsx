@@ -61,7 +61,7 @@ const Preloader = () => {
     }, []);
 
     return (
-        <div ref={preloaderContainerRef} className="fixed h-screen w-screen left-0 bottom-0 z-10 bg-[#0e1016] flex justify-center items-center">
+        <div ref={preloaderContainerRef} className="fixed h-screen w-screen left-0 bottom-0 z-20 bg-[#0e1016] flex justify-center items-center">
 
 
             <div ref={titlesContainerRef} className="h-[100px] overflow-hidden text-[30px] text-[#e4ded7] font-extrabold flex items-center justify-center gap-[5px] opacity-0">
