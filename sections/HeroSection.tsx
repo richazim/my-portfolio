@@ -7,7 +7,7 @@ import HeaderSection from './NavSection';
 const HeroSection = () => {
 
   return (
-    <section id="hero" className='relative h-[100vh] overflow-auto bg-black'>
+    <section id="hero" className='relative min-h-[100vh] overflow-auto bg-[#0E1016] css-bg-image'>
         <HeaderSection/>
 
         <div>

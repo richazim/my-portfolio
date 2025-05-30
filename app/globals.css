@@ -20,17 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*First Loading Page Animation Css*/
-@keyframes progress-animation {
-  from {
-    stroke-dashoffset: 251; /* Complètement vide */
-  }
-  to {
-    stroke-dashoffset: 0; /* Complètement rempli */
-  }
+/*css-bg-image: Placé ici, parce que le tailwind bg-[...] ne fonctionne pas dans la classe de hero section*/
+.css-bg-image{
+  background-image: url("/assets/images/hero-bg-image.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* l'effet parallax. */
 }
-
-.progress-ring {
-  animation: progress-animation 2s cubic-bezier(.17,.67,.83,.67) forwards;
-}
-/*--------------------------------*/
