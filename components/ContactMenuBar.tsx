@@ -4,7 +4,7 @@ import CustomLink from "./CustomLink";
 
 const ContactMenuBar = () => {
   return (
-    <div className='w-[350px] font-semibold font-monaSans flex flex-row justify-between'>
+    <div className='w-[350px] font-semibold font-monaSans flex flex-row justify-between text-[#e4ded7]'>
       <CustomLink name='GITHUB' url="https://github.com/richazim" target="_blank" className="github"/>
       <CustomLink name='LINKEDIN' url="https://linkedin.com/in/azimsaibou" target="_blank" className="linkedin"/>
       <CustomLink name='TWITTER' url="https://x.com/AzimSaibou" target="_blank"/>

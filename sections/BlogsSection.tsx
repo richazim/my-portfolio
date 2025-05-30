@@ -26,8 +26,8 @@ const threeBestBlogs = [
 const BlogsSection = () => {
     return (
         <div className="">
-            <div className="text-black">
-                <h3 className="text-[100px] font-bold font-monaSans text-center text-[#fff]">BLOGS</h3>
+            <div className="text-[#e4ded7]">
+                <h3 className="text-[100px] font-bold font-monaSans text-center">BLOGS</h3>
 
                 <div className="flex justify-center items-center">
                     <p className="uppercase w-[400px] text-center">

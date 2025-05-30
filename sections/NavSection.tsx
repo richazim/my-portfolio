@@ -13,7 +13,7 @@ const NavSection = () => {
   }, [])
   return (
     <div ref={navSectionRef} className="flex flex-row sm:justify-between justify-center py-[30px] px-[30px] font-bold">
-        <Link href="https://www.freelancer.com/u/richazim" className={"font-bold border-[3px] py-[7px] px-[10px] hidden sm:block pointer-events-auto rounded-[7px]"} target="_blank">
+        <Link href="https://www.freelancer.com/u/richazim" className="font-bold border-[3px] py-[7px] px-[10px] hidden sm:block pointer-events-auto rounded-[7px] text-[#e4ded7]" target="_blank">
             <span>HIRE ME HERE</span>
         </Link>
 

@@ -33,7 +33,7 @@ const Profile = () => {
     <div className='h-[500px] relative'>
         <h2 className='font-bold text-center w-full h-[500px] md:text-[210px] text-[80px] leading-none relative flex flex-col items-center overflow-hidden'>
             <span ref={refAzim} className='md:relative absolute md:top-0 top-[105px] text-[#ffc107]'>AZIM</span>
-            <span ref={refSaibou} className='absolute top-[175px]'>SAIBOU</span>
+            <span ref={refSaibou} className='absolute top-[175px] text-[#e4ded7]'>SAIBOU</span>
         </h2> 
 
         <div ref={refProfilePicture} className='rounded-[20px] w-[200px] h-[200px] overflow-hidden absolute left-[50%] translate-x-[-50%] bottom-[16px]'>

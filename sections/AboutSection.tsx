@@ -1,39 +1,14 @@
 "use client";
+import { backendTools, frontendTools } from '@/data/my-tools';
 import React from 'react'
-
-const frontendTools = [
-    'HTML/CSS',
-    'JavaScript (ES6+, TypeScript)',
-    'React.js',
-    'Next.js',
-    'Tailwind CSS',
-    'Figma',
-    'GSAP',
-    'Framer Motion',
-    'Jest'
-]
-
-const backendTools = [
-    'Node.js ',
-    'Next.js',
-    'PHP',
-    'PHPUnit',
-    'Laravel',
-    'MySQL',
-    'SQLite',
-    'RESTful APIs',
-    'JWT',
-    'WebSockets',
-    'Appwrite'
-]
 
 const AboutSection = () => {
   return (
     <div id="about">
         <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">I DEVELOP CLEAN CODE, ROBUST APPLICATIONS AND SEAMLESS USER EXPERIENCES.</p>
 
-        <div className="flex md:flex-row flex-col justify-between gap-[50px] leading-7 mt-[50px] text-black">
-            <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px]">
+        <div className="flex md:flex-row flex-col justify-between gap-[50px] mt-[50px] text-[#e4ded7] font-medium  leading-relaxed tracking-wide">
+            <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px] ">
                 <p>I specialize in creating high-converting landing pages and websites for SaaS, Web3 & AI startups. I’m passionate about building impactful software.</p>
 
                 <p>Outside of frontend development, I&#39;m an active leader in tech communities. As a member of Google Developer Student Clubs and Microsoft Learn Student Ambassadors, I lead workshops and mentor others.</p>
