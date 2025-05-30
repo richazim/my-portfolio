@@ -4,18 +4,18 @@ import WorkCardRightPart from "@/components/WorkCardRightPart";
 
 
 const WorkCard = ({
+    id,
     title,
     description,
     technologies,
     githubLink,
     demoLink,
-    demoImagePath,
-    switchCase
+    demoImagePath
                   } : WorkCardProps) => {
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-white shadow-[0_0_39px_7px_rgba(0,0,0,0.38)]">
-            {!switchCase ? (
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-[800px] lg:h-[400px] w-[100%] rounded-xl overflow-hidden bg-[#212531] shadow-[0_0_39px_7px_rgba(0,0,0,0.38)]">
+            {(id % 2 ) === 0 ? (
                 // FirstCase({
                 //     title,
                 //     description,
@@ -24,13 +24,13 @@ const WorkCard = ({
                 //     demoLink,
                 // })
                 <>
-                    <WorkCardLeftPart title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink} switchCase={switchCase} />
-                    <WorkCardRightPart demoImagePath={demoImagePath} switchCase={switchCase}/>
+                    <WorkCardLeftPart id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
+                    <WorkCardRightPart id={id} demoImagePath={demoImagePath}/>
                 </>
             ): (
                 <>
-                    <WorkCardRightPart demoImagePath={demoImagePath} switchCase={switchCase}/>
-                    <WorkCardLeftPart title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink} switchCase={switchCase}/>
+                    <WorkCardRightPart id={id} demoImagePath={demoImagePath}/>
+                    <WorkCardLeftPart id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
                 </>
             )}
         </div>

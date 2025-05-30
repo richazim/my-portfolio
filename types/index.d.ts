@@ -9,23 +9,23 @@ type WorkDataType = {
 }
 
 type WorkCardProps = {
+    id: number,
     title: string,
     description: string,
     technologies: string[],
     githubLink: string,
     demoLink: string,
     demoImagePath: string,
-    switchCase?: boolean
 }
 type WorkCardLeftPartProps = {
+    id: number,
     title: string,
     description: string,
     technologies: string[],
     githubLink: string,
     demoLink: string,
-    switchCase?: boolean
 }
 type WorkCardRightPartProps = {
+    id: number,
     demoImagePath: string,
-    switchCase?: boolean
 }

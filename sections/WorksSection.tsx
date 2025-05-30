@@ -4,10 +4,11 @@ import WorkCard from "@/components/WorkCard";
 import {WORKS_DATA} from "@/constants";
 
 const WorksSection = () => {
+  
   return (
       <div id="works">
-        <div className="titles text-center font-bold font-monaSans text-[#ffc107]">
-          <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">WORKS</h3>
+        <div className="titles text-center font-bold font-monaSans text-[#fff]">
+          <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] text-[#ffc107]">WORKS</h3>
           <p>PROJECT I HAVE ALREADY MADE</p>
           <p>WITH THEIR SOURCE CODES</p>
         </div>
@@ -16,13 +17,13 @@ const WorksSection = () => {
             WORKS_DATA.map((item, id) => (
                 <WorkCard
                     key={id} // special
+                    id={id}
                     title={item.title}
                     description={item.description}
                     technologies={item.technologies}
                     githubLink={item.githubLink}
                     demoLink={item.demoLink}
                     demoImagePath={item.demoImagePath}
-                    switchCase={item.switchCase}
                 />
             ))
           }
