@@ -10,7 +10,7 @@ const WorksSection = () => {
         <div className="titles text-center font-bold font-monaSans text-[#fff]">
           <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] text-[#ffc107]">PROJETS</h3>
           <p>PROJETS QUE J&apos;AI DÉJÀ RÉALISÉS</p>
-          <p>AVEC LEURS CODES SOURCES</p>
+          <p>PROJETS PERSONNELS - FREELANCE</p>
         </div>
         <div className="flex flex-col gap-[50px] pt-[20px]">
           {
