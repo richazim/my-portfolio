@@ -27,3 +27,22 @@ body {
   background-position: center;
   background-attachment: fixed; /* l'effet parallax. */
 }
+
+/* revealCharctersOnScroll : css initial du texte */
+.initial-css-for-characters-reveal-animation > div {
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 50%, /* fond blanc à 50% de la largeur */
+    rgb(37, 37, 37) 50% /* fond maron au reste des 50% de la largeur */
+  );
+  background-size: 200% 100%; /* Doubler la largeur du background */
+  background-position-x: 100%; /* Déplacer la largeur du background de -100% x de la largeur de x */ 
+  color: transparent; /* Rendre le texte transparent */ 
+  background-clip: text; /* Utiliser la couleur du background pour afficher le texte invisible */ 
+  -webkit-background-clip: text;
+  /*   margin-bottom: -250px; */
+  /* margin-left: 50px; */
+  /* line-height: 1.2; */
+  /*   outline: 6px dotted teal; */
+  /* font-size: 10vw; */
+}

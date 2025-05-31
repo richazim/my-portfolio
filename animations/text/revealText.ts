@@ -1,7 +1,8 @@
 import gsap from "gsap";
 import SplitText from "gsap/dist/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(SplitText);
+gsap.registerPlugin(SplitText, ScrollTrigger);
 
 // export const revealTitleOne = (element: HTMLElement | HTMLElement[]) => {
 //     const splitedStrings = SplitText.create(element, { type: "lines" });
@@ -28,4 +29,29 @@ export const revealTitleTwo = (elOne: HTMLElement | null, elTwo: HTMLElement | n
       .from(elTwo, { y: 100, opacity: 0 }, '-=1');
   
     return tl;
-  };
+};
+
+export const revealTextScroll = (element: HTMLElement) => {
+  if (!element) return;
+
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        y: 50,
+        skewY: 5,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        skewY: 0,
+        duration: 1,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%", // Quand le top du texte touche 80% de la hauteur viewport
+          toggleActions: "play none none none",
+        },
+      }
+    );
+};

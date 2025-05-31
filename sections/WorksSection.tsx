@@ -1,16 +1,25 @@
 "use client";
-import React from 'react'
+import React, { useRef } from 'react'
 import WorkCard from "@/components/WorkCard";
 import {WORKS_DATA} from "@/constants";
+import { useRevealTextOnScroll } from '@/hooks/useRevealTextScroll';
+import { useRevealCharactersOnScrollOne } from '../hooks/useRevealCharactersScroll';
 
 const WorksSection = () => {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const paragraphOneRef = useRef<HTMLParagraphElement>(null);
+  const paragraphTwoRef = useRef<HTMLParagraphElement>(null);
+  
+  useRevealTextOnScroll(titleRef);
+  useRevealCharactersOnScrollOne(paragraphOneRef);
+  useRevealCharactersOnScrollOne(paragraphTwoRef);
   
   return (
       <div id="works">
         <div className="titles text-center font-bold font-monaSans text-[#fff]">
-          <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] text-[#ffc107]">PROJETS</h3>
-          <p>PROJETS QUE J&apos;AI DÉJÀ RÉALISÉS</p>
-          <p>PROJETS PERSONNELS - FREELANCE</p>
+          <h3 ref={titleRef} className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] text-[#ffc107]">PROJETS</h3>
+          <p ref={paragraphOneRef}>PROJETS QUE J&apos;AI DÉJÀ RÉALISÉS</p>
+          <p ref={paragraphTwoRef}>PROJETS PERSONNELS - FREELANCE</p>
         </div>
         <div className="flex flex-col gap-[50px] pt-[20px]">
           {

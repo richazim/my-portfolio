@@ -1,6 +1,6 @@
 "use client"
-import { revealBoxOne } from '@/animations/reveal/revealBox';
-import { revealTitleTwo } from '@/animations/reveal/revealTitle';
+import { revealBoxOne } from '@/animations/element/revealBox';
+import { revealTitleTwo } from '@/animations/text/revealText';
 import gsap from 'gsap';
 import Image from 'next/image'
 import React, { useLayoutEffect, useRef } from 'react'

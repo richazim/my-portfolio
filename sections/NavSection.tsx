@@ -1,5 +1,5 @@
 "use client";
-import { revealBoxOne } from '@/animations/reveal/revealBox';
+import { revealBoxOne } from '@/animations/element/revealBox';
 import ContactMenuBar from '@/components/ContactMenuBar'
 import Link from "next/link";
 import { useLayoutEffect, useRef } from 'react';

@@ -1,11 +1,16 @@
 "use client";
 import { backendTools, frontendTools } from '@/data/my-tools';
-import React from 'react'
+import { useRevealCharactersOnScrollTwo } from '@/hooks/useRevealCharactersScroll';
+import React, { useRef } from 'react'
 
 const AboutSection = () => {
+    const paragraphOneRef = useRef<HTMLParagraphElement>(null);
+    
+    useRevealCharactersOnScrollTwo(paragraphOneRef);
+
   return (
     <div id="about">
-        <p className="sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">JE DÉVELOPPE DU CODE PROPRE, DES APPLICATIONS ROBUSTES ET DES EXPÉRIENCES UTILISATEUR FLUIDES.</p>
+        <p ref={paragraphOneRef} className="initial-css-for-characters-reveal-animation sm:text-[70px] text-[50px]  font-bold font-monaSans text-[#ffc107]">JE DÉVELOPPE DU CODE PROPRE, DES APPLICATIONS ROBUSTES ET DES EXPÉRIENCES UTILISATEUR FLUIDES.</p>
 
         <div className="flex md:flex-row flex-col justify-between gap-[50px] mt-[50px] text-[#e4ded7] font-medium  leading-relaxed tracking-wide">
             <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px] ">
