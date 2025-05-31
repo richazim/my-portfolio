@@ -1,17 +1,26 @@
 "use client";
-import React from 'react';
+import React, { useRef } from 'react';
 import CommentCard from "@/components/CommentCard";
 import Image from "next/image";
 import Link from "next/link";
 import { clientComments } from '@/data/testimonies';
+import { useRevealCharactersOnScrollOne } from '@/hooks/useRevealCharactersScroll';
 
 const TestimonialsSection = () => {
+    const titleRef = useRef(null);
+    const paragraphRef = useRef(null);
+
+    useRevealCharactersOnScrollOne(titleRef);
+    useRevealCharactersOnScrollOne(paragraphRef);
+
     return (
         <div className="flex flex-col justify-between gap-[20px]">
             <div className="titles text-center font-bold">
-                <h3 className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TÉMOIGNAGES</h3>
-                <p>COMMENTAIRES AUTHENTIQUES DE CLIENTS ET COLLABORATEURS QUI</p>
-                <p>ONT EXPÉRIMENTÉ MON TRAVAIL DE PREMIÈRE MAIN</p>
+                <h3 ref={titleRef} className="xl:text-[120px] lg:text-[100px] md:text-[70px] sm:text-[50px] text-[40px] ">TÉMOIGNAGES</h3>
+                <div ref={paragraphRef}>
+                    <p>COMMENTAIRES AUTHENTIQUES DE CLIENTS ET COLLABORATEURS QUI</p>
+                    <p>ONT EXPÉRIMENTÉ MON TRAVAIL DE PREMIÈRE MAIN</p>
+                </div>
             </div>
 
             <div className="cards grid lg:grid-cols-3 md:grid-cols-2  gap-[20px]">

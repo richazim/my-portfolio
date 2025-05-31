@@ -51,6 +51,7 @@ export const revealTextScroll = (element: HTMLElement) => {
           trigger: element,
           start: "top 80%", // Quand le top du texte touche 80% de la hauteur viewport
           toggleActions: "play none none none",
+          // markers: true
         },
       }
     );

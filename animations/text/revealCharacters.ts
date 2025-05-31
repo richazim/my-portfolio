@@ -27,9 +27,9 @@ export const revealCharctersOnScrollOne = (element: HTMLElement) => {
     ease: "power3.out",
     scrollTrigger: {
       trigger: element,
-      start: "top 80%", // Début de l'animation quand le haut de l'élément atteint 80% de la hauteur du viewport
+      start: "top 98%", // Début de l'animation quand le haut de l'élément atteint 80% de la hauteur du viewport
       toggleActions: "play none none none", // Joue une seule fois
-      once: true // Ne rejoue pas
+      once: true, // Ne rejoue pas
     }
   });
 }

@@ -1,16 +1,24 @@
 "use client";
-import React from 'react';
+import React, { useRef } from 'react';
 import BlogCard from "@/components/BlogCard";
 import { threeBestBlogs } from '@/data/blogs';
+import { useRevealCharactersOnScrollOne } from '@/hooks/useRevealCharactersScroll';
+import { useRevealTextOnScroll } from '@/hooks/useRevealTextScroll';
 
 const BlogsSection = () => {
+    const titleRef = useRef(null);
+    const paragraphRef = useRef(null);
+    
+    useRevealTextOnScroll(titleRef);
+    useRevealCharactersOnScrollOne(paragraphRef);
+
     return (
         <div className="">
             <div className="text-[#e4ded7]">
-                <h3 className="text-[100px] font-bold font-monaSans text-center">BLOGS</h3>
+                <h3 ref={titleRef} className="text-[100px] font-bold font-monaSans text-center">BLOGS</h3>
 
                 <div className="flex justify-center items-center">
-                    <p className="uppercase w-[400px] text-center">
+                    <p ref={paragraphRef} className="uppercase w-[400px] text-center">
                         Je partage des idées pratiques pour créer des applications performantes. Apprenons et grandissons ensemble !
                     </p>
                 </div>
