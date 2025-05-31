@@ -36,8 +36,8 @@ const Profile = () => {
             <span ref={refSaibou} className='absolute top-[175px] text-[#e4ded7]'>SAIBOU</span>
         </h2> 
 
-        <div ref={refProfilePicture} className='rounded-[20px] w-[200px] h-[200px] overflow-hidden absolute left-[50%] translate-x-[-50%] bottom-[16px]'>
-            <Image src="/assets/images/profile.png" alt="" height={200} width={200} />
+        <div ref={refProfilePicture} className='rounded-[20px] w-[210px] h-[210px] overflow-hidden absolute left-[50%] translate-x-[-50%] bottom-[16px]'>
+            <Image src="/assets/images/az.jpg" alt="" height={378} width={307} className='w-full h-full object-cover'/>
         </div>
     </div>
   )
