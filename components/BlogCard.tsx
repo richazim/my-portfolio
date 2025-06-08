@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import {truncateText} from "@/utils/truncateText";
+import {truncateText} from "@/lib/utils/truncateText";
 import { BlogCardProps } from '@/types/blogs';
 
 const BlogCard = ({

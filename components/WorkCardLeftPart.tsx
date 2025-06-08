@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
-import {truncateText} from "@/utils/truncateText";
+import {truncateText} from "@/lib/utils/truncateText";
 import { useRevealCharactersOnScrollOne } from "@/hooks/useRevealCharactersScroll";
 import { useRevealTextOnScroll } from "@/hooks/useRevealTextScroll";
 

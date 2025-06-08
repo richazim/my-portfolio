@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React, {useState} from "react";
 import {AnimatePresence, motion} from "framer-motion";
-import {truncateText} from "@/utils/truncateText";
+import {truncateText} from "@/lib/utils/truncateText";
 import { SongProps } from "@/types/songs";
 
 const Song = ({id, thumbnail, title}: SongProps) => {
