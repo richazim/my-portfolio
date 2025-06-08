@@ -5,7 +5,7 @@ import {truncateText} from "@/lib/utils/truncateText";
 import { useRevealCharactersOnScrollOne } from "@/hooks/useRevealCharactersScroll";
 import { useRevealTextOnScroll } from "@/hooks/useRevealTextScroll";
 
-export const WorkCardLeftPart = ({
+export const WorkCardDescription = ({
                               id,
                               title,
                               description,
@@ -34,14 +34,14 @@ export const WorkCardLeftPart = ({
             </Link>
         </div>
 
-        <h4 ref={titleRef} className={`absolute top-[150px] ${(id % 2 !== 0) && 'right-[30px]'} text-[60px] font-bold capitalize`}>{title}</h4>
+        <h4 ref={titleRef} className={`absolute top-[150px] ${(id % 2 !== 0) && 'right-[30px]'} text-4xl sm:text-6xl lg:text-4xl xl:text-5xl font-bold capitalize`}>{title}</h4>
 
-        <p ref={paragraphOneRef} className={`absolute top-[250px] ${(id % 2 !== 0) && 'right-[30px] text-right'} text-[14px] md:text-[16px] lg:text-[18px] normal-case text-[#95979D]`}>{truncateText(description, 60)}</p>
+        <p ref={paragraphOneRef} className={`absolute top-[250px] left-[30px] text-left ${(id % 2 !== 0) && 'right-[30px] '} text-[14px] md:text-[16px] lg:text-[18px] normal-case text-[#95979D]`}>{truncateText(description, 60)}</p>
 
-        <p ref={paragraphTwoRef} className={`absolute top-[350px] text-[#fff] ${(id % 2 !== 0) && 'right-[30px]'} flex flex-row justify-between gap-[10px] font-bold text-[15px] uppercase`}>
+        <p ref={paragraphTwoRef} className={`absolute top-[350px] left-[30px] text-[#fff] text-[9px] sm:text-sm sm:font-bold ${(id % 2 !== 0) && 'right-[30px]'} gap-[10px] text-[15px] uppercase`}>
             {technologies.map((element) => {
                 return (
-                    <span key={element}>{element}</span>
+                    <span key={element} className="mx-3">{element}</span>
                 )
             })}
         </p>
@@ -49,4 +49,7 @@ export const WorkCardLeftPart = ({
     )
 }
 ;
-    export default WorkCardLeftPart;
+    export default WorkCardDescription;
+
+    // Lorsque la carte est impaire (1, 3): la description est sur la gauche
+    // Lorsque la carte est paire (0, 2): la description est sur la droite

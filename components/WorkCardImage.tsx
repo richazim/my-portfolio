@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export const WorkCardRightPart = ({
+export const WorkCardImage = ({
                                id,
                                demoImagePath
                            } : WorkCardRightPartProps) => {
@@ -17,4 +17,4 @@ export const WorkCardRightPart = ({
     )
 }
 
-export default WorkCardRightPart;
+export default WorkCardImage;

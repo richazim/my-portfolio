@@ -1,6 +1,6 @@
 import React from 'react';
-import WorkCardLeftPart from "@/components/WorkCardLeftPart";
-import WorkCardRightPart from "@/components/WorkCardRightPart";
+import WorkCardDescription from "@/components/WorkCardDescription";
+import WorkCardImage from "@/components/WorkCardImage";
 
 
 const WorkCard = ({
@@ -24,13 +24,13 @@ const WorkCard = ({
                 //     demoLink,
                 // })
                 <>
-                    <WorkCardLeftPart id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
-                    <WorkCardRightPart id={id} demoImagePath={demoImagePath}/>
+                    <WorkCardDescription id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
+                    <WorkCardImage id={id} demoImagePath={demoImagePath}/>
                 </>
             ): (
                 <>
-                    <WorkCardRightPart id={id} demoImagePath={demoImagePath}/>
-                    <WorkCardLeftPart id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
+                    <WorkCardImage id={id} demoImagePath={demoImagePath}/>
+                    <WorkCardDescription id={id} title={title} description={description} technologies={technologies} githubLink={githubLink} demoLink={demoLink}/>
                 </>
             )}
         </div>

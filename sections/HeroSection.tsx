@@ -21,8 +21,8 @@ const HeroSection = () => {
           </div>
 
           <div className="md:flex hidden flex-col text-[#e4ded7]">
-            <p>Vous n&apos;avez plus à vous soucier d&apos;embaucher</p>
-            <p>à la fois un développeur frontend et backend.</p>
+            <p>Tu as une idée ? Je la transforme en application</p>
+            <p>informatique fonctionnelle, performante et évolutive.</p>
           </div>
         </div>
 
