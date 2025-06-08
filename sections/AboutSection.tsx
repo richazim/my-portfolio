@@ -14,11 +14,11 @@ const AboutSection = () => {
 
         <div className="flex md:flex-row flex-col justify-between gap-[50px] mt-[50px] text-[#e4ded7] font-medium  leading-relaxed tracking-wide">
             <section className="paragraphs flex flex-col justify-between gap-[20px] text-[20px] ">
-                <p>Je me spécialise dans la création de pages de destination et de sites web à fort taux de conversion pour les startups SaaS, Web3 et IA. Je suis passionné par le développement de logiciels percutants.</p>
+                <p>Je suis développeur fullstack web & mobile, spécialisé dans la création d’expériences modernes et performantes.</p>
 
-                <p>En dehors du développement frontend, je suis un leader actif dans les communautés technologiques. En tant que membre des Google Developer Student Clubs et des Microsoft Learn Student Ambassadors, je dirige des ateliers et j&apos;accompagne d&apos;autres personnes.</p>
+                <p>J’utilise principalement React, Next.js et React Native pour le frontend, associés à Laravel et PHP pour des backends robustes et bien structurés.</p>
 
-                <p>Quand je ne code pas, je regarde des anime, je passe du temps avec mes amis, je soutiens Manchester United ou j&apos;explore de nouveaux genres musicaux comme le RnB, le UK Drill et le Chill Rap.</p>
+                <p>De l’interface utilisateur fluide à l’architecture serveur optimisée, je maîtrise chaque couche d’un projet. J’intègre aussi GSAP pour animer les interfaces de manière fluide et immersive.</p>
 
                 <p>Je travaille actuellement sur des projets excitants que j’ai hâte de partager, mais je suis toujours ouvert à de nouvelles opportunités et collaborations.</p>
             </section>
