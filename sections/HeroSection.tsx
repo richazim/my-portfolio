@@ -20,7 +20,7 @@ const HeroSection = () => {
             <p>Je construis des apps et sites web de A à Z.</p>
           </div>
 
-          <div className="md:flex hidden flex-col text-[#e4ded7]">
+          <div className="md:flex hidden flex-col text-[#e4ded7] text-right">
             <p>Tu as une idée ? Je la transforme en application</p>
             <p>informatique fonctionnelle, performante et évolutive.</p>
           </div>

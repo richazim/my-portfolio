@@ -37,12 +37,12 @@ export const WORKS_DATA: WorkDataType[] = [
         demoImagePath: '/assets/images/works/cover-vtc.png'
     },
     {
-        title: 'DriveClone',
-        description: 'DriveClone est un clone open-source de Google Drive qui permet aux utilisateurs de stocker tous types de fichiers.',
-        technologies: ["React", "Next.js", "Youtube API", "Framer Motion"],
-        githubLink: 'https://github.com/richazim/driveclone',
-        demoLink: 'https://driveclone.vercel.app',
-        demoImagePath: '/assets/images/works/cover-driveclone.png'
+        title: 'Ecommerce',
+        description: 'Une application web e-commerce moderne développée avec Next.js, offrant une expérience utilisateur rapide et fluide grâce au rendu côté serveur (SSR) et à l’optimisation automatique.',
+        technologies: ["React", "Next.js", "APIs"],
+        githubLink: 'https://github.com/richazim/minimal-ecommerce',
+        demoLink: 'https://dminimal-ecommerce-lyart.vercel.app',
+        demoImagePath: '/assets/images/works/ecommerce_app.png'
     },
 ]
 
