@@ -41,7 +41,7 @@ export const WORKS_DATA: WorkDataType[] = [
         description: 'Une application web e-commerce moderne développée avec Next.js, offrant une expérience utilisateur rapide et fluide grâce au rendu côté serveur (SSR) et à l’optimisation automatique.',
         technologies: ["React", "Next.js", "APIs"],
         githubLink: 'https://github.com/richazim/minimal-ecommerce',
-        demoLink: 'https://dminimal-ecommerce-lyart.vercel.app',
+        demoLink: 'https://minimal-ecommerce-lyart.vercel.app',
         demoImagePath: '/assets/images/works/ecommerce_app.png'
     },
 ]
