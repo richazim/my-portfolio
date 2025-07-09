@@ -1,12 +1,12 @@
 # Portfolio
 
-[Link to the portfolio](http://azim7.vercel.app)
+[Accéder au portfolio](http://azim7.vercel.app)
 
-Tech I used to build this site:
+## Technologies utilisées pour développer ce portfolio
 
-- TypeScript
-- React
-- Next.js
-- Tailwind CSS
-- GSAP
-- Youtube API
+- TypeScript  
+- React  
+- Next.js  
+- Tailwind CSS  
+- GSAP  
+- API YouTube
