@@ -8,7 +8,7 @@ const NavigationMenuBar = () => {
   return (
     <div className="fixed w-full flex justify-center items-center bottom-[80%] sm:bottom-[5%] z-10">
       <ul className="flex flex-row bg-black font-bold text-[#e4ded7] rounded">
-          <Link href="/assets/images/cv-azim.png" className="p-[10px]" target="_blank">
+          <Link href="/assets/images/cv-azim.pdf" className="p-[10px]" target="_blank">
               <li><Image src="/assets/icons/cv-icon.svg" alt="" height={20} width={20}/></li>
           </Link>
           <CustomLink name="Accueil" url="#hero" className="p-[10px]"/>
