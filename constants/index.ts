@@ -25,7 +25,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["Laravel", "Sanctum", "Mysql"],
         githubLink: 'https://github.com/richazim/suivix-laravel-api',
         demoLink: '',
-        demoImagePath: '/assets/images/thumbnail.png',
+        demoImagePath: '/assets/images/works/cover-api-laravel.png',
     },
     {
         title: 'Expense Tracker Mobile App',
@@ -33,7 +33,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React Native", "Expo", "React Native Paper", "Expo Sqlite"],
         githubLink: 'https://github.com/richazim/suivix-mobile-app',
         demoLink: '',
-        demoImagePath: '/assets/images/thumbnail.png',
+        demoImagePath: '/assets/images/works/cover-expenser.png',
     },
     {
         title: 'GagShare',
@@ -49,7 +49,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React", "React Native", "Appwrite API"],
         githubLink: 'https://github.com/richazim/musici',
         demoLink: '',
-        demoImagePath: '/assets/images/thumbnail.png'
+        demoImagePath: '/assets/images/works/cover-musici.png'
     },
     {
         title: 'Food Ordering App',
@@ -57,7 +57,7 @@ export const WORKS_DATA: WorkDataType[] = [
         technologies: ["React", "Next.js", "Appwrite API"],
         githubLink: 'https://github.com/richazim/food-ordering-mobile-app',
         demoLink: '',
-        demoImagePath: '/assets/images/thumbnail.png'
+        demoImagePath: '/assets/images/works/cover-food.png'
     },
     {
         title: 'Ecommerce',
@@ -72,7 +72,7 @@ export const WORKS_DATA: WorkDataType[] = [
         description: 'Une application web e-commerce moderne développée avec Next.js, offrant une expérience utilisateur rapide et fluide grâce au rendu côté serveur (SSR) et à l’optimisation automatique.',
         technologies: ["React", "Next.js", "Shadcn"],
         githubLink: 'https://github.com/richazim/driveclone',
-        demoLink: 'https://minimal-ecommerce-lyart.vercel.app',
+        demoLink: 'https://driveclone-mu.vercel.app/',
         demoImagePath: '/assets/images/works/cover-driveclone.png'
     },
 ]
