@@ -24,21 +24,26 @@ export const WorkCardDescription = ({
     
     return (
         <div className="px-[50px] relative h-[400px] text-white">
-        <div className={`links absolute top-[20px] ${(id % 2 !== 0) && 'right-[30px]'} w-[170px] flex flex-row justify-between`}>
+            
+        <div className={`links mt-[20px] ${(id % 2 !== 0) && 'right-[30px]'} w-[170px] flex flex-row justify-between`}>
             <Link href={githubLink} target="_blank" className="h-[70px] w-[70px] bg-[#fff] rounded-full flex justify-center items-center">
                 <Image src="/assets/icons/github.svg" alt="" height={41} width={40}/>
             </Link>
 
-            <Link href={demoLink} target="_blank" className="h-[70px] w-[70px] rounded-full flex justify-center items-center">
-                <Image src="/assets/icons/link.svg" alt="" height={30} width={30}/>
-            </Link>
+            {demoLink && (
+                <Link href={demoLink} target="_blank" className="h-[70px] w-[70px] rounded-full flex justify-center items-center">
+                    <Image src="/assets/icons/link.svg" alt="" height={30} width={30}/>
+                </Link>
+            )}
         </div>
 
-        <h4 ref={titleRef} className={`absolute top-[150px] ${(id % 2 !== 0) && 'right-[30px]'} text-4xl sm:text-6xl lg:text-4xl xl:text-5xl font-bold capitalize`}>{title}</h4>
+        <div className="mt-[50px] ">
+            <h4 ref={titleRef} className={`width-full break-normal ${(id % 2 !== 0) && 'right-[30px]'} text-4xl sm:text-6xl lg:text-4xl xl:text-5xl font-bold capitalize`}>{title}</h4>
 
-        <p ref={paragraphOneRef} className={`absolute top-[250px] left-[30px] text-left ${(id % 2 !== 0) && 'right-[30px] '} text-[14px] md:text-[16px] lg:text-[18px] normal-case text-[#95979D]`}>{truncateText(description, 60)}</p>
+            <p ref={paragraphOneRef} className={` text-left ${(id % 2 !== 0) && 'right-[30px] '} text-[14px] md:text-[16px] lg:text-[18px] normal-case text-[#95979D]`}>{truncateText(description, 60)}</p>
+        </div>
 
-        <p ref={paragraphTwoRef} className={`absolute top-[350px] left-[30px] text-[#fff] text-[9px] sm:text-sm sm:font-bold ${(id % 2 !== 0) && 'right-[30px]'} gap-[10px] text-[15px] uppercase`}>
+        <p ref={paragraphTwoRef} className={`mt-[20px] text-[#fff] text-[9px] sm:text-sm sm:font-bold ${(id % 2 !== 0) && 'right-[30px]'} gap-[10px] text-[15px] uppercase`}>
             {technologies.map((element) => {
                 return (
                     <span key={element} className="mx-3">{element}</span>

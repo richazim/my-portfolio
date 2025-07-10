@@ -5,7 +5,6 @@ type WorkDataType = {
     githubLink: string,
     demoLink: string,
     demoImagePath: string,
-    switchCase?: boolean
 }
 
 type WorkCardProps = {
