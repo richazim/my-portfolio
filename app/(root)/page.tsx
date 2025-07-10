@@ -1,6 +1,6 @@
 import Preloader from "@/components/Preloader";
 import RootPage from "@/pages/RootPage"
-// import AnimatedCursor from "react-animated-cursor";
+import AnimatedCursor from "react-animated-cursor";
 
 const Page = () => {
 
@@ -8,7 +8,7 @@ const Page = () => {
     <>
       <Preloader/>
       <RootPage/>
-      {/* <AnimatedCursor 
+      <AnimatedCursor 
         innerSize={15}
         outerSize={15}
         color='251, 191, 48'
@@ -28,7 +28,7 @@ const Page = () => {
           'button',
           '.link'
         ]}
-      /> */}
+      />
     </>
   )
 }
