@@ -3,7 +3,7 @@ import React from 'react'
 import Profile from '@/components/Profile'
 import NavigationMenuBar from "@/components/NavigationMenuBar";
 import HeaderSection from './NavSection';
-
+// import AnimatedCursor from "react-animated-cursor";
 const HeroSection = () => {
 
   return (
