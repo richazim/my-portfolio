@@ -1,9 +1,9 @@
 "use client";
 import React, { useRef } from 'react'
 import WorkCard from "@/components/WorkCard";
-import {WORKS_DATA} from "@/constants";
 import { useRevealTextOnScroll } from '@/hooks/useRevealTextScroll';
 import { useRevealCharactersOnScrollOne } from '../hooks/useRevealCharactersScroll';
+import { WORKS_DATA } from '@/data/works';
 
 const WorksSection = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
