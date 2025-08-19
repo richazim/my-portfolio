@@ -38,7 +38,7 @@ export const WorkCardDescription = ({
         </div>
 
         <div className="mt-[50px] ">
-            <h4 ref={titleRef} className={`width-full break-normal ${(id % 2 !== 0) && 'right-[30px]'} text-4xl sm:text-6xl lg:text-4xl xl:text-5xl font-bold capitalize`}>{title}</h4>
+            <h4 ref={titleRef} className={`width-full break-normal md:break-all ${(id % 2 !== 0) && 'right-[30px]'} text-4xl sm:text-6xl lg:text-4xl xl:text-5xl font-bold capitalize`}>{title}</h4>
 
             <p ref={paragraphOneRef} className={` text-left ${(id % 2 !== 0) && 'right-[30px] '} text-[14px] md:text-[16px] lg:text-[18px] normal-case text-[#95979D]`}>{truncateText(description, 60)}</p>
         </div>

@@ -12,7 +12,9 @@ const Profile = () => {
   
     useLayoutEffect(() => {
       const ctx = gsap.context(() => {
+
         revealTitleTwo(refAzim.current, refSaibou.current);
+
         revealBoxOne(refProfilePicture.current, {
           opacity: 0,
           scale: 0,
@@ -24,6 +26,7 @@ const Profile = () => {
           delay: 7,
           duration: 1
         })
+        
       });
   
       return () => ctx.revert();

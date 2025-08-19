@@ -35,6 +35,7 @@ export const revealCharctersOnScrollOne = (element: HTMLElement) => {
 }
 
 export const revealCharctersOnScrollTwo = (element: HTMLElement) => { // À utiliser plus tard
+
     const split = new SplitText(element, { type: "lines" });
 
     gsap.set(element, {
@@ -54,4 +55,5 @@ export const revealCharctersOnScrollTwo = (element: HTMLElement) => { // À util
           }
         });
     });
+
 }
